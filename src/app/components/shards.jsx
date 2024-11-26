@@ -4,14 +4,14 @@ import { useState } from "react";
 const Shards = (selectedShard) => {
   const [checked, setChecked] = useState(selectedShard)
   
-  const changeState = () => {
-    setChecked(checked === 1? 2 : 1)
+  const changeState = (e) => {
+    setChecked(Number(e.target.dataset.id))
   }
   
   return (
     <div classname="flex flex-col h-16 w-7">
-      <input type="radio" checked={checked === 1} onChange={changeState}></input>
-      <input type="radio" checked={checked === 2} onChange={changeState}></input>
+      <input type="radio" data-id={1} checked={checked === 1} onChange={(e)=>changeState}></input>
+      <input type="radio" data-id={2} checked={checked === 2} onChange={(e)=>changeState}></input>
     </div>
   )
 }
