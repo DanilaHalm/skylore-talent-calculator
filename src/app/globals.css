@@ -12,13 +12,14 @@ input[type='radio'] {
   appearance: none;
   -webkit-appearance: none;
  -moz-appearance: none;
-  background: white;
-  outline: 2px solid #333;
-  border: 3px solid white;
-  width: 16px;
-  height: 16px;
+  background: #177519;
+  outline: 3px solid #ebca10;
+  border: 3px solid #177519;
+  width: 25px;
+  height: 25px;
+  transform: rotate(90deg); 
 }
 
 input[type='radio']:checked {
-  background: #333;
+  background: #4ced4f;
 }
