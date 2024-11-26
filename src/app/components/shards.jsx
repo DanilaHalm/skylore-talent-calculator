@@ -9,7 +9,7 @@ const Shards = (selectedShard) => {
   }
   
   return (
-    <div classname="flex flex-col h-16 w-7">
+    <div className="flex flex-col h-16 w-7">
       <input type="radio" data-id={1} checked={checked === 1} onChange={(e)=>changeState(e)}></input>
       <input type="radio" data-id={2} checked={checked === 2} onChange={(e)=>changeState(e)}></input>
     </div>
