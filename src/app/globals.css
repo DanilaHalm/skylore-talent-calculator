@@ -17,7 +17,7 @@ input[type='radio'] {
   border: 3px solid #177519;
   width: 25px;
   height: 25px;
-  transform: rotate(90deg); 
+  transform: rotate(45deg); 
 }
 
 input[type='radio']:checked {
