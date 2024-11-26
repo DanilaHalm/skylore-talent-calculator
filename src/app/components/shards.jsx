@@ -10,8 +10,8 @@ const Shards = (selectedShard) => {
   
   return (
     <>
-      <input type="radio" checked={checked === 1} onclick={()=> changeState}></input>
-      <input type="radio" checked={checked === 2} onclick={()=> changeState}></input>
+      <input type="radio" checked={checked === 1} onclick={changeState}></input>
+      <input type="radio" checked={checked === 2} onclick={changeState}></input>
     </>
   )
 }
