@@ -16,4 +16,4 @@ const Shards = (selectedShard) => {
   )
 }
 
-export Shards
+export default Shards
