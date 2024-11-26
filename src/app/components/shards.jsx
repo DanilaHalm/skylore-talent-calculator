@@ -10,8 +10,8 @@ const Shards = (selectedShard) => {
   
   return (
     <div classname="flex flex-col h-16">
-      <input type="radio" checked={checked === 1} onclick={changeState}></input>
-      <input type="radio" checked={checked === 2} onclick={changeState}></input>
+      <input type="radio" checked={checked === 1} onClick={changeState}></input>
+      <input type="radio" checked={checked === 2} onClick={changeState}></input>
     </div>
   )
 }
