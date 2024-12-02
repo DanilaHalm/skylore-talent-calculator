@@ -9,7 +9,7 @@ const ClassBar = () => {
     { name: "Warrior" },
   ];
   return (
-    <nav className="flex justify-around">
+    <nav className="flex justify-around w-96">
       {classes.map((class_) => {
         return <ClassLink class_link={class_.name} id={class_.name} />;
       })}
