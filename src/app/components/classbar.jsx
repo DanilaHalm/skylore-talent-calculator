@@ -11,7 +11,7 @@ const ClassBar = () => {
   return (
     <nav className="flex justify-around w-96">
       {classes.map((class_) => {
-        return <ClassLink class_link={class_.name} id={class_.name} />;
+        return <ClassLink class_link={class_.name} key={class_.name} />;
       })}
     </nav>
   );
