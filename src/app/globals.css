@@ -23,3 +23,7 @@ input[type='radio'] {
 input[type='radio']:checked {
   background: #4ced4f;
 }
+
+.Mage-bg {
+  background-image: url("../../public/Mage.png");
+}
