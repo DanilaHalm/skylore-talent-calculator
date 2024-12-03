@@ -27,3 +27,20 @@ input[type='radio']:checked {
 .Mage-bg {
   background-image: url("../../public/Mage.png");
 }
+
+.Hunter-bg {
+  background-image: url("../../public/Hunter.png");
+}
+
+.Warrior-bg {
+  background-image: url("../../public/Warrior.png");
+}
+
+.Shadow-bg {
+  background-image: url("../../public/Shadow.png");
+}
+
+.Alchemist-bg {
+  background-image: url("../../public/Alchemist.png");
+}
+
