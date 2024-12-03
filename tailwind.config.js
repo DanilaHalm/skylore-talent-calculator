@@ -11,6 +11,13 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        'Mage': "url('/public/Mage.png')",
+        'Hunter': "url('/public/Hunter.png')",
+        'Warrior': "url('/public/Warrior.png')",
+        'Shadow': "url('/public/Shadow.png')",
+        'Alchemist': "url('/public/Alchemist.png')",
+      }
     },
   },
   plugins: [],
