@@ -1,4 +1,4 @@
-
+"use client"
 import Link from "next/link";
 
 const ClassLink = async ({ class_link }) => {
