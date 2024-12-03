@@ -1,11 +1,14 @@
 "use client";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 const LevelBar = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [selectedLevel, setSelectedLevel] = useState(
+    JSON.stringify({ lvl: searchParams.get("lvl"), shards: searchParams.get("shards") })
+  );
 
   const levels_shards = [
     { lvl: 10, shards: 11 },
@@ -37,8 +40,12 @@ const LevelBar = () => {
     return pathname + "?" + createQueryString(value);
   };
 
+  const handleChange = (event) => {
+    router.push(createString(event));
+  };
+
   return (
-    <select onChange={(ev) => router.push(createString(ev))}>
+    <select onChange={(ev) => handleChange(ev)}>
       {levels_shards.map((level_shard) => {
         return (
           <option key={`option${level_shard.shards}`} value={JSON.stringify(level_shard)}>
