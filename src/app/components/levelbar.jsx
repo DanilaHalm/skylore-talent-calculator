@@ -31,9 +31,13 @@ const LevelBar = () => {
     },
     [searchParams]
   )
+
+  const createString = () => {
+    return pathname + "?" + createQueryString(levels_shards[0])
+  }
   
   return (
-    <select>
+    <select onSelect={()=> router.push(createString())}>
       {levels_shards.map(level_shard => {
         return <option value={level_shard}>{level_shard.lvl}</option>
       })}
