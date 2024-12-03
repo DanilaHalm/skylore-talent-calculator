@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 const ClassPage = async ({ params }) => {
   const classpage = (await params).classpage;
   return (
-    <div className="flex justify-center pt-20">
+    <div className="flex flex-col items-center justify-center pt-20">
       <ClassBar class_link={classpage} id={classpage} />
       <LevelBar />
     </div>
