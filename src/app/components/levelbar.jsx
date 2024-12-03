@@ -1,17 +1,36 @@
+"use client"
+import { useCallback } from "react";
+import { useRouter, usePathname, useSearchParams } from "next/navigation"
+
 const LevelBar = () => {
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  
   const levels_shards = [
     {lvl:10,shards:11},
-    {lvl:12,shards:15},
-    {lvl:14,shards:17},
-    {lvl:16,shards:20},
-    {lvl:18,shards:22},
-    {lvl:20,shards:25},
-    {lvl:23,shards:27},
-    {lvl:26,shards:30},
-    {lvl:29,shards:32},
-    {lvl:32,shards:35},
-    {lvl:35,shards:37}
+    {lvl:12,shards:14},
+    {lvl:14,shards:16},
+    {lvl:16,shards:19},
+    {lvl:18,shards:21},
+    {lvl:20,shards:24},
+    {lvl:23,shards:26},
+    {lvl:26,shards:29},
+    {lvl:29,shards:31},
+    {lvl:32,shards:34},
+    {lvl:35,shards:36}
   ]
+
+  const createQueryString = useCallback(
+    (values) => {
+      const params = new URLSearchParams(searchParams)
+      params.set("lvl", values.lvl)
+      params.set("shards", values.shards)
+ 
+      return params.toString()
+    },
+    [searchParams]
+  )
   
   return (
     <select>
