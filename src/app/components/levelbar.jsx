@@ -34,7 +34,7 @@ const LevelBar = () => {
 
   const createString = (event) => {
     const value = event.target.value
-    return pathname + "?" + createQueryString(value)
+    return pathname + "?" + value
   }
   
   return (
