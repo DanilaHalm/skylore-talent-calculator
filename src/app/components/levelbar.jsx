@@ -32,12 +32,13 @@ const LevelBar = () => {
     [searchParams]
   )
 
-  const createString = () => {
-    return pathname + "?" + createQueryString(levels_shards[0])
+  const createString = (event) => {
+    const value = event.target.value
+    return pathname + "?" + createQueryString(value)
   }
   
   return (
-    <select onChange={()=> router.push(createString())}>
+    <select onChange={(ev)=> router.push(createString(ev))}>
       {levels_shards.map(level_shard => {
         return <option value={level_shard}>{level_shard.lvl}</option>
       })}
