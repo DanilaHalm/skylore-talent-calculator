@@ -1,9 +1,10 @@
 
 import Link from "next/link";
 
-const ClassLink = ({ class_link }) => {
+const ClassLink = async ({ class_link }) => {
+  const img = await import(`../../public/${class_link}.png`)
   return (
-    <div className={`w-14 h-14 bg-Mage bg-gray-200 bg-cover rounded-full`}>
+    <div className={`w-14 h-14 bg-[url(${img})] bg-gray-200 bg-cover rounded-full`}>
       <Link className="w-14 h-14 block rounded-full" href={`/${class_link.toLowerCase()}`}>
         {class_link}
       </Link>
