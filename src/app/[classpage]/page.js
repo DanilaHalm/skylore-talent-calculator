@@ -1,4 +1,5 @@
 import ClassBar from "../components/classbar";
+import LevelBar from "../components/levelbar";
 
 export async function generateStaticParams() {
   const classes = [
@@ -19,6 +20,7 @@ const ClassPage = async ({ params }) => {
   return (
     <div className="flex justify-center pt-20">
       <ClassBar class_link={classpage} id={classpage} />
+      <LevelBar />
     </div>
   );
 };
