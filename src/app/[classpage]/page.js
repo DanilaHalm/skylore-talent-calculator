@@ -1,5 +1,5 @@
 import ClassBar from "../components/classbar";
-import LevelBar from "../components/levelbar";
+import LevelBar from "../components/lvlbar";
 import { Suspense } from "react";
 
 const SearchBarFallback = () => {
