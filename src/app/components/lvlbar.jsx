@@ -6,9 +6,9 @@ const LevelBar = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [curLevel,setCurLevel] = useState(20)
+  const [curLevel,setCurLevel] = useState(searchParams.get("lvl") || 20)
   
-  const levels = [20,23,26,29,32,35]
+  const levels = ["20","23","26","29","32","35"]
   
   const createQueryString = useCallback(
     (values) => {
