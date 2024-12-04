@@ -6,29 +6,28 @@ const LevelBar = () => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const [curLevel,setCurLevel] = useState(searchParams.get("lvl") || 20)
+  const [curLevel,setCurLevel] = useState(searchParams.get("lvl"))
   
   const levels = ["20","23","26","29","32","35"]
   
   const createQueryString = useCallback(
-    (values) => {
+    (lvl) => {
       const params = new URLSearchParams(searchParams);
-      params.set("lvl", values.lvl);
-      params.set("shards", values.shards);
+      params.set("lvl", lvl);
 
       return params.toString();
     },
     [searchParams]
   );
 
-  const createString = (event) => {
-    const value = JSON.parse(event.target.value);
-    return pathname + "?" + createQueryString(value);
+  const createString = (lvl) => {
+    return pathname + "?" + createQueryString(lvl);
   };
 
   const handleChange = (event) => {
-    //router.push(createString(event));
-    setCurLevel(event.target.value)
+    const lvl = event.target.value
+    setCurLevel(lvl)
+    router.replace(createString(lvl))
   };
 
   return (
