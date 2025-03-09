@@ -1,5 +1,6 @@
 const mageSkills = [
   {
+    index: 0,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
@@ -7,6 +8,7 @@ const mageSkills = [
     shards: [],
   },
   {
+    index: 1,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
@@ -14,6 +16,7 @@ const mageSkills = [
     shards: [],
   },
   {
+    index: 2,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
@@ -21,6 +24,7 @@ const mageSkills = [
     shards: [],
   },
   {
+    index: 3,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
@@ -28,6 +32,7 @@ const mageSkills = [
     shards: [],
   },
   {
+    index: 4,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
@@ -35,6 +40,7 @@ const mageSkills = [
     shards: [],
   },
   {
+    index: 5,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
@@ -42,6 +48,7 @@ const mageSkills = [
     shards: [],
   },
   {
+    index: 6,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
@@ -49,6 +56,7 @@ const mageSkills = [
     shards: [],
   },
   {
+    index: 7,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
@@ -56,6 +64,7 @@ const mageSkills = [
     shards: [],
   },
   {
+    index: 8,
     name: "name",
     description:"description",
     requiredLvl:"reqLvl",
