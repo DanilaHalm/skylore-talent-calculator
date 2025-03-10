@@ -2,9 +2,9 @@ const AllSkills = ({skills,setSkills}) => {
   
   
   return (
-    <div className="flex justify-around">
+    <div className="flex justify-around flex-wrap">
       {skills.map((skill) => {
-      return <div key={skill.name} className="w-8 h-8 bg-blue-200">{skill.index}</div>
+      return skill.index!==0 && <div key={skill.name} className="w-14 h-14 bg-blue-200">{skill.index}</div>
       })}
     </div>
   )
