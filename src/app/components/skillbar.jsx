@@ -1,6 +1,7 @@
 "use client"
 import AllSkills from "./allskills";
 import {useState} from "react";
+import mageSkills from "@/lib/mageSkills";
 
 const SkillBar = () => {
   // 1) из имени страницы берем название класса (тут)
@@ -11,11 +12,11 @@ const SkillBar = () => {
   // 6) добавить стейт нажатого скила (в активных) 
   // 
   // 5) 
-  const [activeSkills, setActiveSkills] = useState([0,1,2,3,4])
+  const [skills, setSkills] = useState(mageSkills)
   
   return (
     <div className=`flex flex-col`>
-      <AllSkills activeSkills={activeSkills} setActiveSkills={setActiveSkills}/>
+      <AllSkills skills={skills} setActiveSkills={setSkills}/>
     </div>
     )
 }
