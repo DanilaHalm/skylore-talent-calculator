@@ -1,9 +1,84 @@
 "use client"
 import AllSkills from "./allskills";
 import {useState} from "react";
-import mageSkills from "../lib/mageSkills";
+//import mageSkills from "../lib/mageSkills";
 
 const SkillBar = () => {
+  const mageSkills = [
+  {
+    index: 0,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  {
+    index: 1,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  {
+    index: 2,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  {
+    index: 3,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  {
+    index: 4,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  {
+    index: 5,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  {
+    index: 6,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  {
+    index: 7,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  {
+    index: 8,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+  },
+  
+]
   // 1) из имени страницы берем название класса (тут)
   // 2) подтягиваем все скилы и забираем скилы этого класса (тут)
   // 3) делаем компонент выбраных скилов
