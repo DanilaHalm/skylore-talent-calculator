@@ -15,7 +15,7 @@ const SkillBar = () => {
   const [skills, setSkills] = useState(mageSkills)
   
   return (
-    <div className=`flex flex-col bg-red-200`>
+    <div className="flex flex-col bg-red-200">
       <AllSkills skills={skills} setActiveSkills={setSkills}/>
     </div>
     )
