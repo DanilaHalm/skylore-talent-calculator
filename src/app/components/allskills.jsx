@@ -1,5 +1,5 @@
-const AllSkills = ({activeSkills,setActiveSkills}) => {
-  const avSkills = [0,1,2,3,4]
+const AllSkills = ({skills,setSkills}) => {
+  
   
   return (
     <div>
