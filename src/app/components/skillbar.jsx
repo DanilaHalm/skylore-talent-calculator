@@ -1,7 +1,7 @@
 "use client"
 import AllSkills from "./allskills";
 import {useState} from "react";
-import {mageSkills} from "@/app/lib/mageSkills";
+import {mageSkills} from "../lib/mageSkills";
 
 const SkillBar = () => {
   // 1) из имени страницы берем название класса (тут)
