@@ -1,5 +1,6 @@
 import ClassBar from "../components/classbar";
 import LevelBar from "../components/lvlbar";
+import SkillBar from "../components/skillbar";
 import { Suspense } from "react";
 
 const SearchBarFallback = () => {
@@ -27,6 +28,7 @@ const ClassPage = () => {
       //<Suspense fallback={<SearchBarFallback />}>
      //   <LevelBar />
      // </Suspense>
+      <SkillBar />
     </div>
   );
 };
