@@ -9,7 +9,7 @@ setSkills(...skills)
       {skills.map((skill) => {
       return (skill.index!==0 && 
       <div key={skill.name} className={`w-14 h-14 ${skill.checked? "bg-blue-800" : "bg-blue-200"}`}>
-        <input onchange={()=> ()} type="checkbox" className="invisible checked={skill.checked} w-14 h-14 bg-green-200"/>
+        <input onchange={()=> checkSkill(skill)} type="checkbox" className="invisible checked={skill.checked} w-14 h-14 bg-green-200"/>
       </div>
     )
       })}
