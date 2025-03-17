@@ -8,7 +8,7 @@ setSkills(updated)
 }
   const checkActive = () => {
   const filtered = skills.filter(skill=> skill.checked === true)
-  return filtered.length > 4 ? false : true
+  return filtered.length > 4 ? true : false
 }
   
   return (
