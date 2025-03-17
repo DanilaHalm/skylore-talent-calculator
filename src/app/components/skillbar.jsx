@@ -12,6 +12,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   {
     index: 1,
@@ -20,6 +21,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   {
     index: 2,
@@ -28,6 +30,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   {
     index: 3,
@@ -36,6 +39,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   {
     index: 4,
@@ -44,6 +48,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   {
     index: 5,
@@ -52,6 +57,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   {
     index: 6,
@@ -60,6 +66,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   {
     index: 7,
@@ -68,6 +75,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   {
     index: 8,
@@ -76,6 +84,7 @@ const SkillBar = () => {
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
     shards: [],
+    checked: false,
   },
   
 ]
