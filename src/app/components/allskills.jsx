@@ -5,7 +5,7 @@ const AllSkills = () => {
   const mageSkills = [
   {
     index: 0,
-    name: "name",
+    name: "name0",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
@@ -14,7 +14,7 @@ const AllSkills = () => {
   },
   {
     index: 1,
-    name: "name",
+    name: "name1",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
@@ -23,7 +23,7 @@ const AllSkills = () => {
   },
   {
     index: 2,
-    name: "name",
+    name: "name2",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
@@ -32,7 +32,7 @@ const AllSkills = () => {
   },
   {
     index: 3,
-    name: "name",
+    name: "name3",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
@@ -41,7 +41,7 @@ const AllSkills = () => {
   },
   {
     index: 4,
-    name: "name",
+    name: "name4",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
@@ -50,7 +50,7 @@ const AllSkills = () => {
   },
   {
     index: 5,
-    name: "name",
+    name: "name5",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
@@ -59,7 +59,7 @@ const AllSkills = () => {
   },
   {
     index: 6,
-    name: "name",
+    name: "name6",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
@@ -68,7 +68,7 @@ const AllSkills = () => {
   },
   {
     index: 7,
-    name: "name",
+    name: "name7",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
@@ -77,7 +77,7 @@ const AllSkills = () => {
   },
   {
     index: 8,
-    name: "name",
+    name: "name8",
     description:"description",
     requiredLvl:"reqLvl",
     icon:"icon.jpg",
