@@ -1,5 +1,6 @@
 "use client"
 import AllSkills from "./allskills";
+import ChosedSkills from "./chosedSkills";
 import {useState} from "react";
 //import mageSkills from "../lib/mageSkills";
 
@@ -101,6 +102,7 @@ const SkillBar = () => {
   return (
     <div className="flex flex-col bg-red-200">
       <AllSkills skills={skills} setSkills={setSkills}/>
+      <ChosedSkills skills={skills.filter(skill=> skill.checked === true || skill.index === 0)}/>
     </div>
     )
 }
