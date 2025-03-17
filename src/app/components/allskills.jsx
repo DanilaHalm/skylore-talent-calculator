@@ -9,7 +9,7 @@ setSkills(updated)
   
   return (
     <div className="grid grid-cols-4 gap-4 justify-center">
-{JSON.stringify(skills)}
+
       {skills.map((skill) => {
       return (skill.index!==0 && 
       <div key={skill.name} className={`w-14 h-14 ${skill.checked? "bg-blue-800" : "bg-blue-200"}`}>
