@@ -1,4 +1,94 @@
-const AllSkills = ({skills,setSkills}) => {
+"use client"
+import {useState} from "react;
+
+const AllSkills = () => {
+  const mageSkills = [
+  {
+    index: 0,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+  {
+    index: 1,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+  {
+    index: 2,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+  {
+    index: 3,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+  {
+    index: 4,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+  {
+    index: 5,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+  {
+    index: 6,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+  {
+    index: 7,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+  {
+    index: 8,
+    name: "name",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },
+
+]
+
+const [skills,setSkills] = useState(mageSkills);
+
   const checkSkill = (index) => {
 skills[index].checked = !skills[index].checked
 setSkills([...skills])
