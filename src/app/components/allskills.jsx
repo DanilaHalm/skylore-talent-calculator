@@ -90,8 +90,9 @@ const AllSkills = () => {
 const [skills,setSkills] = useState(mageSkills);
 
   const checkSkill = (index) => {
-skills[index].checked = !skills[index].checked
-setSkills([...skills])
+const updated = [skills]
+updated[index].checked = !updated[index].checked
+setSkills(updated)
 }
   
   return (
