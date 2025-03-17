@@ -1,6 +1,6 @@
 const AllSkills = ({skills,setSkills}) => {
   const checkSkill = (skill) => {
-skill.checked = !skill.checked
+skills[skill.index].checked = !skills[skill.index].checked
 setSkills(...skills)
 }
   
