@@ -100,7 +100,7 @@ const SkillBar = () => {
   
   return (
     <div className="flex flex-col bg-red-200">
-      <AllSkills skills={skills} setActiveSkills={setSkills}/>
+      <AllSkills skills={skills} setSkills={setSkills}/>
     </div>
     )
 }
