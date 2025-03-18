@@ -6,6 +6,7 @@ const ChosedSkills = ({skills}) => {
   <div className="flex flex-col w-screen h-[20vh] bg-yellow-200 border" key={skill.name+"add"}>
     <div className="flex h-1/2 bg-orange-200">
   <div className="h-full aspect-square bg-blue-200">img</div>
+  <div className="grow bg-purple-300"></div>
 </div>
 </div>
 )
