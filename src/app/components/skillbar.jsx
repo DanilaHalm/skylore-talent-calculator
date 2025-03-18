@@ -100,7 +100,7 @@ const SkillBar = () => {
   const [skills, setSkills] = useState(mageSkills)
   
   return (
-    <div className="flex flex-col justify-center bg-red-200">
+    <div className="flex flex-col justify-center content-center bg-red-200">
       <AllSkills skills={skills} setSkills={setSkills}/>
       <ChosedSkills skills={skills.filter(skill=> skill.checked === true || skill.index === 0)}/>
     </div>
