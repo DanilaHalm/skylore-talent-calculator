@@ -2,8 +2,8 @@ import Shards from "./shards";
 
 const SkillShards = () => {
   return (
-    <div className="grow flex flex-row bg-purple-300">
-      <div className="bg-red-400">
+    <div className="grow bg-purple-300">
+      <div className="flex flex-row bg-red-400">
         <Shards selectedShard={0}/>
         <Shards selectedShard={0}/>
         <Shards selectedShard={0}/>
