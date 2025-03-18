@@ -3,7 +3,7 @@ const ChosedSkills = ({skills}) => {
     <div>
   {skills.map(skill => {
   return (
-  <div className="h-[20vh] bg-yellow-200 border" key={skill.name+"add"}>
+  <div className="w-screen h-[20vh] bg-yellow-200 border" key={skill.name+"add"}>
   
 </div>
 )
