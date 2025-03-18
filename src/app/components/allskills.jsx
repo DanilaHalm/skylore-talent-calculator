@@ -12,7 +12,7 @@ setSkills(updated)
 }
   
   return (
-    <div className="grid grid-cols-4 gap-4 justify-center">
+    <div className="grid grid-cols-4 justify-around">
 
       {skills.map((skill) => {
       return (skill.index!==0 && 
