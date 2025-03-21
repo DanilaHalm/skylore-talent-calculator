@@ -10,6 +10,7 @@ const ChosedSkills = ({skills}) => {
               <div className="h-full aspect-square bg-blue-200">img</div>
               <SkillShards/>
             </div>
+            <div>description</div>
           </div>
          )
        })}
