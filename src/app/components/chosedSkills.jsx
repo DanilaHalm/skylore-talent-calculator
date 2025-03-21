@@ -14,7 +14,7 @@ const ChosedSkills = ({skills}) => {
               <div onClick={()=>setIsDescActive (!isDescActive)} className="h-full aspect-square bg-blue-200">img</div>
               <SkillShards/>
             </div>
-            <div className={`${isDescActive? h-auto : h-0}`}>description</div>
+            <div className={`${isDescActive? "h-auto" : "h-0"}`}>description</div>
           </div>
          )
        })}
