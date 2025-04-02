@@ -18,7 +18,7 @@ const ChosedSkills = ({skills}) => {
                 </div>
                 <div>{"skillname"}</div>
               </div>
-              
+              <div className="h-full bg-red-600">{"shardsdesc"}</div>
             </div>
             <div className={`${isDescActive? "h-auto" : "h-0"}`}>{"description"}</div>
           </div>
