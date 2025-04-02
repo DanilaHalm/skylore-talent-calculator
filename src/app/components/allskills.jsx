@@ -9,9 +9,9 @@ const AllSkills = ({skills,setSkills}) => {
   const searchParams = useSearchParams()
     
   const checkSkill = (index) => {
-    const updated = [...skills]
-    updated[index].checked = !updated[index].checked
-    setSkills(updated)
+    //const updated = [...skills]
+   // updated[index].checked = !updated[index].checked
+    //setSkills(updated)
 
 
 
@@ -20,7 +20,7 @@ const AllSkills = ({skills,setSkills}) => {
     
     
     if(isActive){
-      urlSkills.filter((skill)=> skill[0] !== `${index}`)
+      urlSkills.splice(index,1)
      
     } else {
     urlSkills.push(`${index}000`)
