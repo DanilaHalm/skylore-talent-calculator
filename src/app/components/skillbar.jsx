@@ -3,9 +3,14 @@ import AllSkills from "./allskills";
 import ChosedSkills from "./chosedSkills";
 import {useState} from "react";
 //import mageSkills from "../lib/mageSkills";
+import { usePathname, useSearchParams } from "next/navigation";
+ 
 
 const SkillBar = () => {
-  const mageSkills = [
+  const pathname = usePathname();
+  const charClass = pathname.slice(1);
+  const libSkills = {
+ mage: [
   {
     index: 0,
     name: "name0",
@@ -88,16 +93,10 @@ const SkillBar = () => {
     checked: false,
   },
   
-]
-  // 1) из имени страницы берем название класса (тут)
-  // 2) подтягиваем все скилы и забираем скилы этого класса (тут)
-  // 3) делаем компонент выбраных скилов
-  // 4) добавляем стейт выбраных скилов (тут)
-  // 5) добавляем кнопку "добавить в выбраные" и "убрать из выбранных" (в активных)
-  // 6) добавить стейт нажатого скила (в активных) 
-  // 
-  // 5) 
-  const [skills, setSkills] = useState(mageSkills)
+],
+}
+  
+  const [skills, setSkills] = useState(libSkills[charClass])
   
   return (
     <div className="flex flex-col justify-center content-center items-center bg-red-200">
