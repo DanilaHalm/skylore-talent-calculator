@@ -1,11 +1,34 @@
+"use client"
+
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
+ 
+
 const AllSkills = ({skills,setSkills}) => {
-  
+  const router = useRouter()
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
     
   const checkSkill = (index) => {
-const updated = [...skills]
-updated[index].checked = !updated[index].checked
-setSkills(updated)
+    const updated = [...skills]
+    updated[index].checked = !updated[index].checked
+    setSkills(updated)
+
+
+
+    const urlSkills = searchParams.get("skills").split("-")
+    const isActive = urlSkills.find((skill) => skill[0] === `${index}`)
+    
+    
+    if(isActive){
+      urlSkills.filter((skill)=> skill[0] !== `${index}`)
+     
+    } else {
+    urlSkills.push(`${index}000`)
+    }
+    const url = `${pathname}?${urlSkills.join("-")}`
+      router.push(url)
 }
+
   const checkActive = () => {
   const filtered = skills.filter(skill=> skill.checked === true)
   return filtered.length > 3 ? true : false
