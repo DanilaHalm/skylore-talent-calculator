@@ -27,7 +27,7 @@ const AllSkills = ({skills,setSkills}) => {
 
 }
   
-  useEffect(setSkill,[searchParams])
+  useEffect(setSkill,[])
 
 
 
