@@ -22,7 +22,7 @@ const AllSkills = ({skills,setSkills}) => {
     } else {
     urlSkills.push(`${index}000`)
     }
-    const url = `${pathname}?${urlSkills.join("-")}`
+    const url = `${pathname}?skills=${urlSkills.join("-")}`
       router.push(url)
 
 }
