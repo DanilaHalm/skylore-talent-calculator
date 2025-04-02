@@ -1,6 +1,7 @@
 "use client"
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
  
 
 const AllSkills = ({skills,setSkills}) => {
@@ -8,7 +9,7 @@ const AllSkills = ({skills,setSkills}) => {
   const pathname = usePathname()
   const searchParams = useSearchParams()
     
-  const checkSkill = (index) => {
+  const checkSkill = useCallback((index) => {
     //const updated = [...skills]
    // updated[index].checked = !updated[index].checked
     //setSkills(updated)
@@ -27,7 +28,7 @@ const AllSkills = ({skills,setSkills}) => {
     }
     const url = `${pathname}?${urlSkills.join("-")}`
       router.push(url)
-}
+}, [searchParams])
 
   const checkActive = () => {
   const filtered = skills.filter(skill=> skill.checked === true)
