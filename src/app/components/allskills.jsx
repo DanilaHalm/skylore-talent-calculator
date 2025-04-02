@@ -12,6 +12,7 @@ const AllSkills = ({skills,setSkills}) => {
 
 
   const setSkill = (index)=>{
+    if(index === undefined) return 
     const urlSkills = searchParams.get("skills").split("-")
     const isActive = urlSkills.find((skill) => skill[0] === `${index}`)
     
