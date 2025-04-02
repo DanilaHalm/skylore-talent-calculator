@@ -12,7 +12,7 @@ const ChosedSkills = ({skills}) => {
           <div className="flex flex-col w-screen bg-yellow-200 border" key={skill.name+"add"}>
             <div className="flex flex-row h-[20vh] bg-orange-200">
               <div className="h-full flex flex-col">
-                <div className="flex flex-row">
+                <div className="h-full flex flex-row">
                   <div onClick={()=>setIsDescActive (!isDescActive)} className="h-1/2 aspect-square bg-blue-200">img</div>
                   <SkillShards/>
                 </div>
