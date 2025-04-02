@@ -24,7 +24,7 @@ const AllSkills = ({skills,setSkills}) => {
     const url = `${pathname}?${urlSkills.join("-")}`
       router.push(url)
 
-},[])  
+},[searchParams])  
 
 
 
