@@ -16,12 +16,12 @@ const AllSkills = ({skills,setSkills}) => {
     const isActive = urlSkills.find((skill) => skill[0] === `${index}`)
     
     
-    if(isActive){
-      urlSkills.splice(index,1)
+   // if(isActive){
+   //   urlSkills.splice(index,1)
      
-    } else {
+  //  } else {
     urlSkills.push(`${index}000`)
-    }
+    //}
     const url = `${pathname}?skills=${urlSkills.join("-")}`
       router.push(url)
 
