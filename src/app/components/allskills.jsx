@@ -62,9 +62,9 @@ onClick={()=> setSkill(skill.index)} className="opacity-0 w-14 h-14 bg-green-200
 }
 
 //<input type="checkbox" 
-onClick={()=> setSkill(skill.index)}
-disabled={skill.checked === false? checkActive() : false} 
-checked={skill.checked} 
-className="opacity-0 w-14 h-14 bg-green-200"/>
+//onClick={()=> setSkill(skill.index)}
+//disabled={skill.checked === false? checkActive() : false} 
+//checked={skill.checked} 
+//className="opacity-0 w-14 h-14 bg-green-200"/>
 
 export default AllSkills
