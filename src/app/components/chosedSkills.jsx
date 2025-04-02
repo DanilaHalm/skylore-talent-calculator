@@ -11,10 +11,16 @@ const ChosedSkills = ({skills}) => {
         return (
           <div className="flex flex-col w-screen bg-yellow-200 border" key={skill.name+"add"}>
             <div className="flex flex-row h-[20vh] bg-orange-200">
-              <div onClick={()=>setIsDescActive (!isDescActive)} className="h-full aspect-square bg-blue-200">img</div>
-              <SkillShards/>
+              <div className="h-full flex flex-col">
+                <div>
+                  <div onClick={()=>setIsDescActive (!isDescActive)} className="h-1/2 aspect-square bg-blue-200">img</div>
+                  <SkillShards/>
+                </div>
+                <div>{"skillname"}</div>
+              </div>
+              
             </div>
-            <div className={`${isDescActive? "h-auto" : "h-0"}`}>description</div>
+            <div className={`${isDescActive? "h-auto" : "h-0"}`}>{"description"}</div>
           </div>
          )
        })}
