@@ -28,7 +28,7 @@ const AllSkills = ({skills,setSkills}) => {
 
 }
   
-  useEffect(setSkill,[])
+  useEffect(()=>{},[])
 
 
 
