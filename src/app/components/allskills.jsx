@@ -28,7 +28,7 @@ const AllSkills = ({skills,setSkills}) => {
     }
     const url = `${pathname}?${urlSkills.join("-")}`
       router.push(url)
-}, [searchParams])
+}, [searchParams,router])
 
   //const checkActive = () => {
   //const filtered = skills.filter(skill=> skill.checked === true)
