@@ -54,7 +54,7 @@ const AllSkills = ({skills,setSkills}) => {
         
           <input type="checkbox" 
 onClick={()=> setSkill(skill.index)}
-disabled={checkSkill(skill.index)}
+disabled={checkSkill(`${skill.index}`)}
 className="opacity-0 w-14 h-14 bg-green-200 checked:opacity-1"/>
       </div>
     )
