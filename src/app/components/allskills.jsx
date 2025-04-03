@@ -15,11 +15,12 @@ const AllSkills = ({skills,setSkills}) => {
     
     
     const urlSkills = searchParams.get("skills").split("-")
-    const isActive = urlSkills.find((skill) => skill[0] === `${index}`)
+    const activeSkill = urlSkills.find((skill) => skill[0] === `${index}`)
     
     
-   if(isActive){
-     urlSkills.splice(index,1)
+   if(activeSkill){
+     const idx = urlSkills.indexOf(activeSkill)
+     urlSkills.splice(idx,1)
      
     } else {
     urlSkills.push(`${index}000`)
