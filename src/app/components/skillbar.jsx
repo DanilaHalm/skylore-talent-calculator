@@ -438,7 +438,7 @@ alchemist: [
   return (
     <div className="flex flex-col justify-center content-center items-center bg-red-200">
       <AllSkills skills={skills} setSkills={setSkills}/>
-      <ChosedSkills skills={skills.filter(skill=> skill.checked === true || skill.index === 0)}/>
+      <ChosedSkills skills={skills}/>
     </div>
     )
 }
