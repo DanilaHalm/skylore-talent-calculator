@@ -8,10 +8,8 @@ const AllSkills = ({skills,setSkills}) => {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
-  const selectedSkills = searchParams.get("skills").split("-").map(skill=> skill[0])
 
   const setSkill = useCallback((index)=>{
-
     const urlSkills = searchParams.get("skills").split("-")
     const activeSkill = urlSkills.find((skill) => skill[0] === `${index}`)
     
@@ -24,7 +22,6 @@ const AllSkills = ({skills,setSkills}) => {
     }
     const url = `${pathname}?skills=${urlSkills.join("-")}`
     router.replace(url)
-
 },[searchParams])
   
   
@@ -55,7 +52,7 @@ const AllSkills = ({skills,setSkills}) => {
           <input type="checkbox" 
 onClick={()=> setSkill(skill.index)}
 disabled={checkSkill(`${skill.index}`)}
-className="opacity-0 w-14 h-14 bg-green-200 checked:opacity-1"/>
+className="opacity-0 w-14 h-14 bg-green-200"/>
       </div>
     )
       })}
