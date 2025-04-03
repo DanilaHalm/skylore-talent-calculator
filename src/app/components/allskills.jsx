@@ -39,11 +39,12 @@ const AllSkills = ({skills,setSkills}) => {
     }
 }
 
-  const checkActive = useCallback((index) => {
+  const checkActive = (index) => {
+    const searchParams = useSearchParams()
     const urlSkillsIdx = searchParams.get("skills").split("-").map(skill=> skill[0])
     const isActive = urlSkillsIdx.includes(index)
    return isActive 
-  },[searchParams])
+  }
   
   return (
     <div className="grid grid-cols-4 gap-4 justify-around">
