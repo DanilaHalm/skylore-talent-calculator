@@ -39,7 +39,7 @@ const AllSkills = ({skills,setSkills}) => {
     }
 }
 
-  const checkActive = () => {
+  const checkActive = (index) => {
     const urlSkillsIdx = searchParams.get("skills").split("-").map(skill=> skill[0])
     const isActive = urlSkillsIdx.includes(index)
    return isActive 
