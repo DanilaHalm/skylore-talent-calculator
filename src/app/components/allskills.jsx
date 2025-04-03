@@ -24,7 +24,7 @@ const AllSkills = ({skills,setSkills}) => {
       urlSkills.push(`${index}000`)
     }
     const url = `${pathname}?skills=${urlSkills.join("-")}`
-    router.push(url)
+    router.replace(url)
 
 },[searchParams])
   
@@ -40,7 +40,6 @@ const AllSkills = ({skills,setSkills}) => {
 }
 
   const checkActive = (index) => {
-    const searchParams = useSearchParams()
     const urlSkillsIdx = searchParams.get("skills").split("-").map(skill=> skill[0])
     const isActive = urlSkillsIdx.includes(index)
    return isActive 
