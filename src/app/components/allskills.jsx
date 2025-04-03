@@ -7,12 +7,12 @@ import { useEffect } from "react";
 const AllSkills = ({skills,setSkills}) => {
   const router = useRouter()
   const pathname = usePathname()
-  //const searchParams = useSearchParams()
+  const searchParams = useSearchParams()
   
 
 
   const setSkill = (index)=>{
-    const searchParams = useSearchParams()
+    
     
     const urlSkills = searchParams.get("skills").split("-")
     const isActive = urlSkills.find((skill) => skill[0] === `${index}`)
