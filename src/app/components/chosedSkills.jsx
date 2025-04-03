@@ -1,13 +1,20 @@
 "use client"
 import {useState} from "react";
 import SkillShards from "./skillShards";
+import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
 
 const ChosedSkills = ({skills}) => {
+  const router = useRouter()
+  const searchParams = useSearchParams()
+  const pathname = usePathname()
   const [isDescActive, setIsDescActive] = useState(false)
+  const urlSkills = searchParams.get("skills").split("-").map(skill=>skill[0])
+  const selectedSkills = skills.filter(skill=> urlSkills.includes(`${skill.index}`))
 
   return (
     <div>
-      {skills.map(skill => {
+      {selectedSkills.map(skill => {
         return (
           <div className="flex flex-col w-screen bg-yellow-200 border" key={skill.name+"add"}>
             <div className="w-full flex flex-row h-[20vh] bg-orange-200">
