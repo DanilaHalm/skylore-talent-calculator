@@ -39,18 +39,18 @@ const AllSkills = ({skills,setSkills}) => {
     }
 }
 
-  const checkActive = (index) => {
+  const checkActive = useCallback((index) => {
     const urlSkillsIdx = searchParams.get("skills").split("-").map(skill=> skill[0])
     const isActive = urlSkillsIdx.includes(index)
    return isActive 
-  }
+  },[searchParams])
   
   return (
     <div className="grid grid-cols-4 gap-4 justify-around">
 
       {skills.map((skill) => {
       return (skill.index!==0 && 
-      <div key={skill.name} className={`w-14 h-14 ${checkActive(skill.index) ? bg-blue-800 : bg-blue-200}`}>
+      <div key={skill.name} className={`w-14 h-14 ${checkActive(skill.index) ? "bg-blue-800" : "bg-blue-200"}`}>
       
         
           <input type="checkbox" 
