@@ -33,8 +33,8 @@ const Shards = ({skillIndex,shardIndex}) => {
 
   return (
     <div className="flex flex-col justify-around h-[90%] w-7 pl-1 pt-1">
-      <input type="radio" data-id={1} checked={checkShard()} onClick={(e)=>setShard(e)}>{`${skillIndex}`}</input>
-      <input type="radio" data-id={2} checked={checkShard()} onClick={(e)=>setShard(e)}>{`${skillIndex}`}</input>
+      <input type="radio" data-id={1} checked={checkShard()} onClick={(e)=>setShard(e)}></input>
+      <input type="radio" data-id={2} checked={checkShard()} onClick={(e)=>setShard(e)}></input>
     </div>
   )
 }
