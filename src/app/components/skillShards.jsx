@@ -1,12 +1,12 @@
 import Shards from "./shards";
 
-const SkillShards = () => {
+const SkillShards = ({skillIndex}) => {
   return (
     <div className=" grow bg-purple-300">
       <div className="flex flex-row justify-around bg-red-400 h-full">
-        <Shards selectedShard={0}/>
-        <Shards selectedShard={0}/>
-        <Shards selectedShard={0}/>
+        <Shards skillIndex={skillIndex} selectedShard={0}/>
+        <Shards skillIndex={skillIndex} selectedShard={0}/>
+        <Shards skillIndex={skillIndex} selectedShard={0}/>
       </div>
 </div>
 )
