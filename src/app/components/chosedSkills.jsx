@@ -27,7 +27,7 @@ const ChosedSkills = ({skills}) => {
               </div>
               <div className="h-full w-1/2  bg-red-600">{"shardsdesc"}</div>
             </div>
-            <div className={`${isDescActive? "h-auto" : "h-0"}`}>{skill.index}</div>
+            {isDescActive && <div className="h-auto">{"description"}</div>}
           </div>
          )
        })}
