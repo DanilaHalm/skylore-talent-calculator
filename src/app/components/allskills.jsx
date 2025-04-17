@@ -25,13 +25,17 @@ const AllSkills = ({skills,setSkills,ultimates}) => {
 },[searchParams])
   
   
-  const checkSkill = (index) => {
+  const checkSkill = (index,isUltimate) => {
     const urlSkillsIdx = searchParams.get("skills").split("-").map(skill=> skill[0])
     const isActive = urlSkillsIdx.includes(index)
     if(isActive){
       return false
     } else {
-      return urlSkillsIdx.length > 4 ? true : false
+      if(isUltimate){
+        
+        return urlSkillIdx.includes(index) ? false : true
+    }
+      return urlSkillsIdx.length > 3 ? true : false
     }
 }
 
