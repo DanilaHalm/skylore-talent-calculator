@@ -28,14 +28,16 @@ const AllSkills = ({skills,setSkills,ultimates}) => {
   const checkSkill = (index,isUltimate) => {
     const urlSkillsIdx = searchParams.get("skills").split("-").map(skill=> skill[0])
     const isActive = urlSkillsIdx.includes(index)
+    
     if(isActive){
+      
       return false
     } else {
       if(isUltimate){
-        
-        return urlSkillIdx.includes(index) ? false : true
+        const secondUltimate = index === "0"? "9" : "0"
+        return urlSkillIdx.includes(secondUltimate) ? false : true
     }
-      return urlSkillsIdx.length > 3 ? true : false
+      return urlSkillsIdx.length > 4 ? true : false
     }
 }
 
