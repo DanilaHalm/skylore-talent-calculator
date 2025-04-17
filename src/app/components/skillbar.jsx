@@ -9,9 +9,7 @@ import { usePathname, useSearchParams } from "next/navigation";
 const SkillBar = () => {
   const pathname = usePathname();
   const charClass = pathname.slice(1);
-  const libSkills = {
- mage: [
-  {
+  const ultimates = [{
     index: 0,
     name: "name0",
     description:"description",
@@ -20,6 +18,18 @@ const SkillBar = () => {
     shards: [],
     checked: false,
   },
+  {
+    index: 9,
+    name: "name9",
+    description:"description",
+    requiredLvl:"reqLvl",
+    icon:"icon.jpg",
+    shards: [],
+    checked: false,
+  },]
+
+  const libSkills = {
+ mage: [
   {
     index: 1,
     name: "name1",
@@ -437,7 +447,7 @@ alchemist: [
   
   return (
     <div className="flex flex-col justify-center content-center items-center bg-red-200">
-      <AllSkills skills={skills} setSkills={setSkills}/>
+      <AllSkills skills={skills} setSkills={setSkills} ultimates={ultimates}/>
       <ChosedSkills skills={skills}/>
     </div>
     )
