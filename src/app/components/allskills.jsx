@@ -42,8 +42,8 @@ const AllSkills = ({skills,setSkills,ultimates}) => {
   }
   
   return (
-      <div className="flex flex-col mb-2">
-      <div className="grid grid-cols-2 gap-4 justify-around">
+      <div className="flex flex-col my-2">
+      <div className="grid grid-cols-2 gap-4 justify-around mb-2">
 
       {ultimates.map((skill) => {
       return (
