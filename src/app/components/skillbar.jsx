@@ -105,16 +105,7 @@ const SkillBar = () => {
   
 ],
 hunter: [
-  {
-    index: 0,
-    name: "name0",
-    description:"description",
-    requiredLvl:"reqLvl",
-    icon:"icon.jpg",
-    shards: [],
-    checked: false,
-  },
-  {
+{
     index: 1,
     name: "name1",
     description:"description",
@@ -189,15 +180,6 @@ hunter: [
   
 ],
 shadow: [
-  {
-    index: 0,
-    name: "name0",
-    description:"description",
-    requiredLvl:"reqLvl",
-    icon:"icon.jpg",
-    shards: [],
-    checked: false,
-  },
   {
     index: 1,
     name: "name1",
@@ -274,15 +256,6 @@ shadow: [
 ],
 warrior: [
   {
-    index: 0,
-    name: "name0",
-    description:"description",
-    requiredLvl:"reqLvl",
-    icon:"icon.jpg",
-    shards: [],
-    checked: false,
-  },
-  {
     index: 1,
     name: "name1",
     description:"description",
@@ -357,15 +330,6 @@ warrior: [
   
 ],
 alchemist: [
-  {
-    index: 0,
-    name: "name0",
-    description:"description",
-    requiredLvl:"reqLvl",
-    icon:"icon.jpg",
-    shards: [],
-    checked: false,
-  },
   {
     index: 1,
     name: "name1",
