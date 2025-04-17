@@ -4,7 +4,7 @@ import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
  
 
-const AllSkills = ({skills,setSkills}) => {
+const AllSkills = ({skills,setSkills,ultimates}) => {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -42,11 +42,12 @@ const AllSkills = ({skills,setSkills}) => {
   }
   
   return (
-    <div className="grid grid-cols-4 gap-4 justify-around">
+      <div className="flex flex-col mb-2">
+      <div className="grid grid-cols-2 gap-4 justify-around">
 
-      {skills.map((skill) => {
-      return (skill.index!==0 && 
-      <div key={skill.name} className={`w-14 h-14 ${checkActive(`${skill.index}`) ? "bg-blue-800" : "bg-blue-200"}`}>
+      {ultimates.map((skill) => {
+      return (
+        <div key={skill.name} className={`w-14 h-14 ${checkActive(`${skill.index}`) ? "bg-yellow-800" : "bg-yellow-200"}`}>
       
         
           <input type="checkbox" 
@@ -56,6 +57,23 @@ className="opacity-0 w-14 h-14 bg-green-200"/>
       </div>
     )
       })}
+    </div>
+
+    <div className="grid grid-cols-4 gap-4 justify-around">
+
+      {skills.map((skill) => {
+      return (
+        <div key={skill.name} className={`w-14 h-14 ${checkActive(`${skill.index}`) ? "bg-blue-800" : "bg-blue-200"}`}>
+      
+        
+          <input type="checkbox" 
+onClick={()=> setSkill(skill.index)}
+disabled={checkSkill(`${skill.index}`)}
+className="opacity-0 w-14 h-14 bg-green-200"/>
+      </div>
+    )
+      })}
+    </div>
     </div>
   )
 }
