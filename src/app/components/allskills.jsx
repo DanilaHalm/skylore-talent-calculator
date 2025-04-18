@@ -10,7 +10,8 @@ const AllSkills = ({skills,setSkills,ultimates}) => {
   const searchParams = useSearchParams()
 
   const setSkill = useCallback((index)=>{
-    const urlSkills = searchParams.get("skills").split("-")
+    const urlSkillsString = searchParams.get("skills")
+    const urlSkills = urlSkillsString? urlSkillsString.split("-") : []
     const activeSkill = urlSkills.find((skill) => skill[0] === `${index}`)
     
    if(activeSkill){
