@@ -1,6 +1,7 @@
 "use client"
 import AllSkills from "./allskills";
 import ChosedSkills from "./chosedSkills";
+import ChosedPassives from "./chosedPassives";
 import {useState} from "react";
 //import mageSkills from "../lib/mageSkills";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -413,6 +414,7 @@ alchemist: [
     <div className="flex flex-col justify-center content-center items-center bg-red-200">
       <AllSkills skills={skills} setSkills={setSkills} ultimates={ultimates}/>
       <ChosedSkills skills={[...skills,...ultimates]}/>
+      <ChosedPassives/>
     </div>
     )
 }
