@@ -16,7 +16,7 @@ input[type='radio'] {
   outline: 3px solid #ebca10;
   border: 3px solid #177519;
   aspect-ratio: 1;
-  height: 45%;
+  height: 35%;
   transform: rotate(45deg); 
 }
 
