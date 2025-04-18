@@ -20,7 +20,7 @@ const ChosedSkills = ({skills}) => {
             <div className="w-full flex flex-row h-[17vh] bg-orange-200">
               <div className="w-1/2 flex flex-col">
                 <div className="flex flex-row">
-                  <div onClick={()=>setIsDescActive (!isDescActive)} className="h-[10vh] aspect-square bg-blue-200">img</div>
+                  <div onClick={()=>setIsDescActive (!isDescActive)} className="h-[8vh] aspect-square bg-blue-200">img</div>
                   <SkillShards skillIndex={skill.index}/>
                 </div>
                 <div>{"skillname"}</div>
