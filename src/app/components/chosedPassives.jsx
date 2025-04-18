@@ -14,10 +14,10 @@ const ChosedPassives = () => {
 
 
   return (
-    <div className="flex flex-col w-screen">
-      <div className="h-[10vh] bg-green-500 flex flex-row justify-around align-center">
+    <div className="flex flex-col justify-center w-screen">
+      <div className="h-[12vh] bg-green-500 flex flex-row justify-around">
         { passives.map(passive=> {
-            return <div className="h-[8vh] aspect-square bg-purple-500 rounded" onClick={()=> setIsDescActive(!isDescActive)}></div>
+            return <div className="h-[8vh] aspect-square bg-purple-500 rounded-full" onClick={()=> setIsDescActive(!isDescActive)}></div>
           })
         }
       </div>
