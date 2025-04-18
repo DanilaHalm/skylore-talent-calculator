@@ -17,7 +17,7 @@ const ChosedSkills = ({skills}) => {
       {selectedSkills.map(skill => {
         return (
           <div className="flex flex-col w-screen bg-yellow-200" key={skill.name+"add"}>
-            <div className="w-full flex flex-row h-[17vh] bg-orange-200">
+            <div className="w-full flex flex-row h-[15vh] bg-orange-200">
               <div className="w-1/2 flex flex-col">
                 <div className="flex flex-row">
                   <div onClick={()=>setIsDescActive (!isDescActive)} className="h-[8vh] aspect-square bg-blue-200">img</div>
