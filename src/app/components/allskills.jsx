@@ -35,7 +35,7 @@ const AllSkills = ({skills,setSkills,ultimates}) => {
     } else {
       if(isUltimate){
         const secondUltimate = index === "0"? "9" : "0"
-        return urlSkillIdx.includes(secondUltimate) ? false : true
+        return urlSkillIdx.includes(secondUltimate) ? true : false
     }
       return urlSkillsIdx.length > 4 ? true : false
     }
