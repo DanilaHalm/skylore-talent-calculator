@@ -412,7 +412,7 @@ alchemist: [
   return (
     <div className="flex flex-col justify-center content-center items-center bg-red-200">
       <AllSkills skills={skills} setSkills={setSkills} ultimates={ultimates}/>
-      <ChosedSkills skills={skills}/>
+      <ChosedSkills skills={[...skills,...ultimates]}/>
     </div>
     )
 }
