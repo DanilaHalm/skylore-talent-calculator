@@ -1,6 +1,6 @@
 "use client"
 import AllSkills from "./allskills";
-impirt AllPassives from "./allPassives";
+import AllPassives from "./allPassives";
 import ChosedSkills from "./chosedSkills";
 import ChosedPassives from "./chosedPassives";
 import {useState} from "react";
