@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 
 const passives = [
   { name: "Pname0",
@@ -40,7 +40,7 @@ const passives = [
 
 
 const AllPassives = () => {
-  const [log,setLog] = useState("*")
+  
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -81,7 +81,7 @@ const AllPassives = () => {
 
   return (
       <div className="grid grid-cols-5 gap-3 justify-around my-3">
-      {log}
+      
       {passives.map((skill) => {
       return (
         <div key={skill.name} className={`w-14 h-14 ${checkActive(`${skill.index}`) ? "bg-blue-800" : "bg-blue-200"} rounded-full`}>
@@ -90,7 +90,7 @@ const AllPassives = () => {
           <input type="checkbox" 
 onClick={()=> setSkill(skill.index)}
 disabled={checkSkill(`${skill.index}`)}
-className="opacity-1 w-14 h-14 bg-green-200 rounded-full"/>
+className="opacity-0 w-14 h-14 bg-green-200 rounded-full"/>
       </div>
     )
       })}
