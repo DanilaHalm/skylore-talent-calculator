@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 
 const passives = [
   { name: "Pname0",
@@ -40,6 +40,7 @@ const passives = [
 
 
 const AllPassives = () => {
+  const [log,setLog] = useState("*")
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
@@ -49,7 +50,7 @@ const AllPassives = () => {
     const urlPassiveSkillsString = searchParams.get("passives") || ""
     const urlSkills = urlPassiveSkillsString ? urlPassiveSkillsString.split("") : []
     const activeSkill = urlSkills.find(`${index}`)
-
+    setLog(activeSkill)
    if(activeSkill){
      const idx = urlSkills.indexOf(activeSkill)
      urlSkills.splice(idx,1)
@@ -80,7 +81,7 @@ const AllPassives = () => {
 
   return (
       <div className="grid grid-cols-5 gap-3 justify-around my-3">
-
+      {log}
       {passives.map((skill) => {
       return (
         <div key={skill.name} className={`w-14 h-14 ${checkActive(`${skill.index}`) ? "bg-blue-800" : "bg-blue-200"} rounded-full`}>
