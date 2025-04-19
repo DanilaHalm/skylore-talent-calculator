@@ -49,7 +49,7 @@ const AllPassives = () => {
     const urlActiveSkillsString = searchParams.get("skills")
     const urlPassiveSkillsString = searchParams.get("passives") || ""
     
-    const urlSkills = urlPassiveSkillsString ? urlPassiveSkillsString.split("") : []
+    const urlSkills = urlPassiveSkillsString.split("")
     setLog(JSON.Stringify(urlSkills))
     const activeSkill = urlSkills.find(`${index}`)
     
