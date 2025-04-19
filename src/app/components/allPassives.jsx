@@ -90,7 +90,7 @@ const AllPassives = () => {
           <input type="checkbox" 
 onClick={()=> setSkill(skill.index)}
 disabled={checkSkill(`${skill.index}`)}
-className="opacity-0 w-14 h-14 bg-green-200 rounded-full"/>
+className="opacity-1 w-14 h-14 bg-green-200 rounded-full"/>
       </div>
     )
       })}
