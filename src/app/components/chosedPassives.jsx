@@ -59,7 +59,7 @@ const ChosedPassives = () => {
       {
         isDescActive && <div className="flex flex-col">
           chosed.map(passive=> {
-            return <div key={passive.desc}>{passive.desc}</div>
+            return (<div key={passive.desc}>{passive.desc}</div>)
           })
         </div>
       }
