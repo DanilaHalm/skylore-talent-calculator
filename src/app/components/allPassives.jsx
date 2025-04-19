@@ -36,10 +36,6 @@ const passives = [
     index: 7,
     desc: "description"
   },
-  { name: "Pname8",
-    index: 8,
-    desc: "description"
-  }
 ]
 
 
@@ -61,7 +57,7 @@ const AllPassives = () => {
     } else {
       urlSkills.push(`${index}`)
     }
-    const url = `${pathname}?skills=${urlActiveSkillsString}&passives=${urlSkills.join("-")}`
+    const url = `${pathname}?skills=${urlActiveSkillsString}&passives=${urlSkills.join("")}`
     router.replace(url)
 },[searchParams])
 
@@ -83,7 +79,7 @@ const AllPassives = () => {
   }
 
   return (
-      <div className="grid grid-cols-4 gap-2 justify-around mb-2">
+      <div className="grid grid-cols-5 gap-3 justify-around my-3">
 
       {passives.map((skill) => {
       return (
