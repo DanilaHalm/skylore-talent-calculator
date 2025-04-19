@@ -45,7 +45,7 @@ const AllPassives = () => {
   const searchParams = useSearchParams()
 
   const setSkill = useCallback((index)=>{
-    const urlActiveSkillsString = searchParams.get("skills") || ""
+    const urlActiveSkillsString = searchParams.get("skills")
     const urlPassiveSkillsString = searchParams.get("passives") || ""
     const urlSkills = urlPassiveSkillsString? urlPassiveSkillsString.split("") : []
     const activeSkill = urlSkills.find(`${index}`)
