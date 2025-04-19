@@ -50,10 +50,10 @@ const AllPassives = () => {
     const urlPassiveSkillsString = searchParams.get("passives") || ""
     
     const urlSkills = urlPassiveSkillsString.split("")
-    let a = JSON.stringify(urlSkills)
-    setLog(a)
-    const activeSkill = urlSkills.find(`${index}`)
     
+    const activeSkill = urlSkills.find(`${index}`)
+    let a = JSON.stringify(activeSkill)
+    setLog(a)
    if(activeSkill){
      const idx = urlSkills.indexOf(activeSkill)
      urlSkills.splice(idx,1)
