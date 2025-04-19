@@ -51,14 +51,14 @@ const ChosedPassives = () => {
   return (
     <div className="flex flex-col w-screen">
       <div className="h-[12vh] bg-green-500 flex flex-row justify-around items-center">
-        { chosed.map(passive=> {
+        { chosed.map(passive => {
             return <div key={passive.name} className="h-[8vh] aspect-square bg-purple-500 rounded-full" onClick={()=> setIsDescActive(!isDescActive)}></div>
           })
         }
       </div>
       {
         isDescActive && <div className="flex flex-col">
-          chosed.map(passive=> {
+          chosed.map(passive => {
             return (<div key={passive.desc}>{passive.desc}</div>)
           })
         </div>
