@@ -10,8 +10,9 @@ const AllSkills = ({skills,setSkills,ultimates}) => {
   const searchParams = useSearchParams()
 
   const setSkill = useCallback((index)=>{
-    const urlSkillsString = searchParams.get("skills")
-    const urlSkills = urlSkillsString? urlSkillsString.split("-") : []
+    const urlPassiveSkillsString = searchParams.get("passives")
+    const urlActiveSkillsString = searchParams.get("skills")
+    const urlSkills = urlActiveSkillsString? urlActiveSkillsString.split("-") : []
     const activeSkill = urlSkills.find((skill) => skill[0] === `${index}`)
     
    if(activeSkill){
@@ -21,7 +22,7 @@ const AllSkills = ({skills,setSkills,ultimates}) => {
     } else {
       urlSkills.push(`${index}000`)
     }
-    const url = `${pathname}?skills=${urlSkills.join("-")}`
+    const url = `${pathname}?skills=${urlSkills.join("-")}&passives=${urlPassiveSkills.string}`
     router.replace(url)
 },[searchParams])
   
