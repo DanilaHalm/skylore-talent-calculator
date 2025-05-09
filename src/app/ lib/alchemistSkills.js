@@ -1,4 +1,4 @@
-const mageSkills = [
+const alchemistSkills = [
   {
     index: 1,
     name: "name1",
@@ -65,4 +65,4 @@ const mageSkills = [
   },
 ];
 
-export default mageSkills;
+export default alchemistSkills;

@@ -1,10 +1,9 @@
 import ClassBar from "../components/classbar";
-import LevelBar from "../components/lvlbar";
 import SkillBar from "../components/skillbar";
 import { Suspense } from "react";
 
 const SearchBarFallback = () => {
-  return <>placeholder</>;
+  return <>Loading...</>;
 };
 
 export async function generateStaticParams() {
@@ -26,9 +25,7 @@ const ClassPage = () => {
     <div className="flex flex-col items-center justify-center pt-20">
       <ClassBar />
       <Suspense fallback={<SearchBarFallback />}>
-     
-      
-      <SkillBar />
+        <SkillBar />
       </Suspense>
     </div>
   );
