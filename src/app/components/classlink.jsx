@@ -12,7 +12,7 @@ const ClassLink = ({ class_link }) => {
         pathname === "/" + class_link.toLowerCase() ? "" : "grayscale"
       } border-2 bg-cover bg-no-repeat bg-center rounded-full`}
     >
-      <Link className="w-14 h-14 block rounded-full" href={`/${class_link.toLowerCase()}?skills=0000`}></Link>
+      <Link className="w-14 h-14 block rounded-full" href={`/${class_link.toLowerCase()}?skills=0000&passives=`}></Link>
     </div>
   );
 };

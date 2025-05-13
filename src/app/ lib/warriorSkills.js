@@ -1,3 +1,22 @@
+const warriorUltimates = [
+  {
+    index: 0,
+    name: "name0",
+    description: "description",
+    requiredLvl: "reqLvl",
+    icon: "icon.jpg",
+    shards: [],
+  },
+  {
+    index: 9,
+    name: "name9",
+    description: "description",
+    requiredLvl: "reqLvl",
+    icon: "icon.jpg",
+    shards: [],
+  },
+];
+
 const warriorSkills = [
   {
     index: 1,
@@ -65,4 +84,4 @@ const warriorSkills = [
   },
 ];
 
-export default warriorSkills;
+export { warriorUltimates, warriorSkills };
