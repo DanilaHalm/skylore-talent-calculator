@@ -2,12 +2,10 @@
 import { useState } from "react";
 import SkillShards from "./skillShards";
 import ChosedShardsDesc from "./chosedShardsDesc";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 
 const ChosedSkills = ({ skills }) => {
-  const router = useRouter();
   const searchParams = useSearchParams();
-  const pathname = usePathname();
   const [isDescActive, setIsDescActive] = useState(false);
   const urlSkills = searchParams
     .get("skills")
@@ -30,7 +28,7 @@ const ChosedSkills = ({ skills }) => {
                 </div>
                 <div>{"skillname"}</div>
               </div>
-              <ChosedShardsDesc skill={skill}/>
+              <ChosedShardsDesc shards={skill.shards} skillIndex={skill.index} />
             </div>
             {isDescActive && <div className="h-auto">{"description"}</div>}
           </div>
