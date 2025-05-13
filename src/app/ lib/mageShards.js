@@ -1,233 +1,353 @@
 const mageShards = {
   0:{
-    tier1:[{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
-    1:{
-    tier1:[{
+  1:{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
   2:{
-    tier1:[{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
   3:{
-    tier1:[{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
     4:{
-    tier1:[{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
   5:{
-    tier1:[{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
   6:{
-    tier1:[{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
-    7:{
-    tier1:[{
+  7:{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
   8:{
-    tier1:[{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
-9:{
-    tier1:[{
+  9:{
+    tier1:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc11",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier2:[{
+      desc:"desc12",
+        }
+      },
+    tier2:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc21",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }],
-    tier3:[{
+      desc:"desc22",
+        }
+      },
+    tier3:
+      {
+        1:{
       name:"name",
-      desc:"desc",
-    },{
+      desc:"desc31",
+        },
+        2:{
       name:"name",
-      desc:"desc",
-    }]
+      desc:"desc32",
+        }
+      },
   },
   
 
