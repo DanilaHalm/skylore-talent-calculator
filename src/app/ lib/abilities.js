@@ -1,21 +1,30 @@
 import { mageUltimates, mageSkills } from "./mageSkills";
-import hunterSkills from "./hunterSkills";
-import shadowSkills from "./shadowSkills";
+import { hunterUltimates, hunterSkills } from "./hunterSkills";
+import { shadowUltimates, shadowSkills } from "./shadowSkills";
 import { warriorUltimates, warriorSkills } from "./warriorSkills";
-import alchemistSkills from "./alchemistSkills";
+import { alchemistUltimates, alchemistSkills } from "./alchemistSkills";
 
 const abilities = {
   mage: {
     ultimates: mageUltimates, 
     skills: mageSkills
   },
-  hunter: hunterSkills,
-  shadow: shadowSkills,
+  hunter: {
+    ultimates: hunterUltimates, 
+    skills: hunterSkills
+  },
+  shadow: {
+    ultimates: shadowUltimates, 
+    skills: shadowSkills
+  },
   warrior: { 
     ultimates: warriorUltimates, 
     skills: warriorSkills 
   },
-  alchemist: alchemistSkills,
+  alchemist: {
+    ultimates: alchemistUltimates, 
+    skills: alchemistSkills
+  },
 };
 
 export default abilities;
