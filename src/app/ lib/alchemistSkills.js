@@ -1,3 +1,22 @@
+const alchemistUltimates = [
+  {
+    index: 0,
+    name: "name0",
+    description: "description",
+    requiredLvl: "reqLvl",
+    icon: "icon.jpg",
+    shards: [],
+  },
+  {
+    index: 9,
+    name: "name9",
+    description: "description",
+    requiredLvl: "reqLvl",
+    icon: "icon.jpg",
+    shards: [],
+  },
+];
+
 const alchemistSkills = [
   {
     index: 1,
@@ -65,4 +84,4 @@ const alchemistSkills = [
   },
 ];
 
-export default alchemistSkills;
+export {alchemistUltimates,alchemistSkills};
