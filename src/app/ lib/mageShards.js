@@ -1,5 +1,5 @@
 const mageShards = {
-  s1:{
+  0:{
     tier1:[{
       name:"name",
       desc:"desc",
@@ -22,7 +22,7 @@ const mageShards = {
       desc:"desc",
     }]
   },
-    s2:{
+    1:{
     tier1:[{
       name:"name",
       desc:"desc",
@@ -45,7 +45,7 @@ const mageShards = {
       desc:"desc",
     }]
   },
-  s3:{
+  2:{
     tier1:[{
       name:"name",
       desc:"desc",
@@ -68,7 +68,7 @@ const mageShards = {
       desc:"desc",
     }]
   },
-  s4:{
+  3:{
     tier1:[{
       name:"name",
       desc:"desc",
@@ -91,7 +91,7 @@ const mageShards = {
       desc:"desc",
     }]
   },
-    s5:{
+    4:{
     tier1:[{
       name:"name",
       desc:"desc",
@@ -114,7 +114,7 @@ const mageShards = {
       desc:"desc",
     }]
   },
-  s6:{
+  5:{
     tier1:[{
       name:"name",
       desc:"desc",
@@ -137,7 +137,7 @@ const mageShards = {
       desc:"desc",
     }]
   },
-  s7:{
+  6:{
     tier1:[{
       name:"name",
       desc:"desc",
@@ -160,7 +160,7 @@ const mageShards = {
       desc:"desc",
     }]
   },
-    s8:{
+    7:{
     tier1:[{
       name:"name",
       desc:"desc",
@@ -183,7 +183,30 @@ const mageShards = {
       desc:"desc",
     }]
   },
-  s9:{
+  8:{
+    tier1:[{
+      name:"name",
+      desc:"desc",
+    },{
+      name:"name",
+      desc:"desc",
+    }],
+    tier2:[{
+      name:"name",
+      desc:"desc",
+    },{
+      name:"name",
+      desc:"desc",
+    }],
+    tier3:[{
+      name:"name",
+      desc:"desc",
+    },{
+      name:"name",
+      desc:"desc",
+    }]
+  },
+9:{
     tier1:[{
       name:"name",
       desc:"desc",
