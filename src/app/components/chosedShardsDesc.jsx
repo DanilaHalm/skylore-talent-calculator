@@ -11,9 +11,9 @@ const ChosedShardsDesc = (skill) => {
   
   const selectedSkill = urlSkills.find(skill => skill[0] === `${skill.index}`)
   const shards = [
-  skill.shards[tier1][selectedSkill[1],
-  skill.shards[tier2][selectedSkill[2],
-  skill.shards[tier3][selectedSkill[3]
+  skill.shards.tier1[selectedSkill[1],
+  skill.shards.tier2[selectedSkill[2],
+  skill.shards.tier3][selectedSkill[3]
   ]
 
 
@@ -21,12 +21,13 @@ const ChosedShardsDesc = (skill) => {
     <div className="h-full w-1/2  bg-red-600">
       {
         shards.map(shard => {
-            return (
+            return ({
+              shard && 
               <div>
                 <h5>{shard.name}</h5>
                 <p>{shard.desc}</p>
               </div>
-              )
+              })
           })
       }
       
