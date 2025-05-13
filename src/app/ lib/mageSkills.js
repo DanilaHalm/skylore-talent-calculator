@@ -7,7 +7,6 @@ const mageUltimates = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 9,
@@ -15,9 +14,10 @@ const mageUltimates = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
 ];
+
+mageUltimates.map(ult => ult.shards = mageShards[ult.index])
 
 const mageSkills = [
   {
@@ -26,7 +26,6 @@ const mageSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 2,
@@ -34,7 +33,6 @@ const mageSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 3,
@@ -42,7 +40,6 @@ const mageSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 4,
@@ -50,7 +47,6 @@ const mageSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 5,
@@ -58,7 +54,6 @@ const mageSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 6,
@@ -66,7 +61,6 @@ const mageSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 7,
@@ -74,7 +68,6 @@ const mageSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 8,
@@ -82,8 +75,9 @@ const mageSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
 ];
+
+mageSkills.map(skill => skill.shards = mageShards[skill.index])
 
 export {mageUltimates,mageSkills}
