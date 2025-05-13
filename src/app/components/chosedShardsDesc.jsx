@@ -18,15 +18,16 @@ const ChosedShardsDesc = (skill) => {
   return ( 
     <div className="h-full w-1/2  bg-red-600">
       {
-        shards.map(shard => {
-          if(!shard) return 
-          return (
-            <div>
-              <h5>{shard.name}</h5>
-              <p>{shard.desc}</p>
-            </div>
-          )
-        })
+       JSON.Stringify(shards)
+        //shards.map(shard => {
+         // if(!shard) return 
+         // return (
+          //  <div>
+            //  <h5>{shard.name}</h5>
+          //    <p>{shard.desc}</p>
+          //  </div>
+          //)
+        //})
       }
     </div>
   )
