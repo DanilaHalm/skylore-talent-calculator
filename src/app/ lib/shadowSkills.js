@@ -7,7 +7,6 @@ const shadowUltimates = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 9,
@@ -15,7 +14,6 @@ const shadowUltimates = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
 ];
 
@@ -26,7 +24,6 @@ const shadowSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 2,
@@ -34,7 +31,6 @@ const shadowSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 3,
@@ -42,7 +38,6 @@ const shadowSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 4,
@@ -50,7 +45,6 @@ const shadowSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 5,
@@ -58,7 +52,6 @@ const shadowSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 6,
@@ -66,7 +59,6 @@ const shadowSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 7,
@@ -74,7 +66,6 @@ const shadowSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 8,
@@ -82,7 +73,6 @@ const shadowSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
 ];
 
