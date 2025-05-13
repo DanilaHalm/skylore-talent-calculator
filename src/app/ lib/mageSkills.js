@@ -1,3 +1,5 @@
+import mageShards from "./mageShards"
+
 const mageUltimates = [
   {
     index: 0,
