@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 
-const ChosedShardsDesc = (skill) => {
+const ChosedShardsDesc = ({skill}) => {
   const searchParams = useSearchParams();
 
   const urlSkills = searchParams.get("skills").split("-")
