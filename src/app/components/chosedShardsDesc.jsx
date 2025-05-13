@@ -13,7 +13,7 @@ const ChosedShardsDesc = (skill) => {
   const shards = [
   skill.shards.tier1[selectedSkill[1],
   skill.shards.tier2[selectedSkill[2],
-  skill.shards.tier3][selectedSkill[3]
+  skill.shards.tier3[selectedSkill[3]
   ]
 
 
