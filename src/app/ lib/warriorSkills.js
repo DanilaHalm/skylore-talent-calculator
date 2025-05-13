@@ -1,3 +1,5 @@
+import warriorShards from "./warriorShards"
+
 const warriorUltimates = [
   {
     index: 0,
@@ -5,7 +7,6 @@ const warriorUltimates = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 9,
@@ -13,7 +14,6 @@ const warriorUltimates = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
 ];
 
@@ -24,7 +24,6 @@ const warriorSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 2,
@@ -32,7 +31,6 @@ const warriorSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 3,
@@ -40,7 +38,6 @@ const warriorSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 4,
@@ -48,7 +45,6 @@ const warriorSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 5,
@@ -56,7 +52,6 @@ const warriorSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 6,
@@ -64,7 +59,6 @@ const warriorSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 7,
@@ -72,7 +66,6 @@ const warriorSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 8,
@@ -80,8 +73,11 @@ const warriorSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
 ];
+
+warriorUltimates.map(ult => ult.shards = warriorShards[ult.index])
+
+warriorSkills.map(skill => skill.shards = warriorShards[skill.index])
 
 export { warriorUltimates, warriorSkills };
