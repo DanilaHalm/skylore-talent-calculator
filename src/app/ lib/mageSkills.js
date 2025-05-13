@@ -1,3 +1,22 @@
+const mageUltimates = [
+  {
+    index: 0,
+    name: "name0",
+    description: "description",
+    requiredLvl: "reqLvl",
+    icon: "icon.jpg",
+    shards: [],
+  },
+  {
+    index: 9,
+    name: "name9",
+    description: "description",
+    requiredLvl: "reqLvl",
+    icon: "icon.jpg",
+    shards: [],
+  },
+];
+
 const mageSkills = [
   {
     index: 1,
@@ -65,4 +84,4 @@ const mageSkills = [
   },
 ];
 
-export default mageSkills;
+export {mageUltimates,mageSkills}
