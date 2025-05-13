@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import SkillShards from "./skillShards";
+import ChosedShardsDesc from "./chosedShardsDesc";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
 const ChosedSkills = ({ skills }) => {
@@ -29,7 +30,7 @@ const ChosedSkills = ({ skills }) => {
                 </div>
                 <div>{"skillname"}</div>
               </div>
-              <div className="h-full w-1/2  bg-red-600">{"shardsdesc"}</div>
+              <ChosedShardsDesc skill={skill}/>
             </div>
             {isDescActive && <div className="h-auto">{"description"}</div>}
           </div>
