@@ -20,13 +20,15 @@ const ChosedShardsDesc = (skill) => {
       {
         shards.map(shard => {
           return (
-              <div>{
+              <>
+                {
                 shard && 
-              
-                <h5>{shard.name}</h5>
-                <p>{shard.desc}</p>
-              }
-              </div>
+                <div>
+                  <h5>{shard.name}</h5>
+                  <p>{shard.desc}</p>
+                </div>
+                }
+              </>
             )
         })
       }
