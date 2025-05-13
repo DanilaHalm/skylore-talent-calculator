@@ -1,3 +1,6 @@
+import alchemistShards from "./alchemistShards"
+
+
 const alchemistUltimates = [
   {
     index: 0,
@@ -5,7 +8,6 @@ const alchemistUltimates = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 9,
@@ -13,7 +15,6 @@ const alchemistUltimates = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
 ];
 
@@ -24,7 +25,6 @@ const alchemistSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 2,
@@ -32,7 +32,6 @@ const alchemistSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 3,
@@ -40,7 +39,6 @@ const alchemistSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 4,
@@ -48,7 +46,6 @@ const alchemistSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 5,
@@ -56,7 +53,6 @@ const alchemistSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 6,
@@ -64,7 +60,6 @@ const alchemistSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 7,
@@ -72,7 +67,6 @@ const alchemistSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
   {
     index: 8,
@@ -80,8 +74,11 @@ const alchemistSkills = [
     description: "description",
     requiredLvl: "reqLvl",
     icon: "icon.jpg",
-    shards: [],
   },
 ];
+
+alchemistUltimates.map(ult => ult.shards = alchemistShards[ult.index])
+
+alchemistSkills.map(skill => skill.shards = alchemistShards[skill.index])
 
 export {alchemistUltimates,alchemistSkills};
