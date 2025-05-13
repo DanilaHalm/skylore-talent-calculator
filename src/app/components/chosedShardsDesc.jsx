@@ -24,7 +24,7 @@ const ChosedShardsDesc = (skill) => {
             return (
               <div>
                 <h5>{shard.name}</h5>
-                <p>{shardDesc}</p>
+                <p>{shard.desc}</p>
               </div>
               )
           })
