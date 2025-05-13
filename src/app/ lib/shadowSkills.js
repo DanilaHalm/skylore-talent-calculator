@@ -1,3 +1,5 @@
+import shadowShards from "./shadowShards"
+
 const shadowUltimates = [
   {
     index: 0,
@@ -83,5 +85,9 @@ const shadowSkills = [
     shards: [],
   },
 ];
+
+shadowUltimates.map(ult => ult.shards = shadowShards[ult.index])
+
+shadowSkills.map(skill => skill.shards = shadowShards[skill.index])
 
 export {shadowUltimates,shadowSkills};
