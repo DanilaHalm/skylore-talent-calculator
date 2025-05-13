@@ -19,13 +19,13 @@ const ChosedShardsDesc = (skill) => {
     <div className="h-full w-1/2  bg-red-600">
       {
         shards.map(shard => {
-          return ({
-            shard && 
+          return (
+            shard !== undefined && 
               <div>
                 <h5>{shard.name}</h5>
                 <p>{shard.desc}</p>
               </div>
-            })
+            )
         })
       }
     </div>
