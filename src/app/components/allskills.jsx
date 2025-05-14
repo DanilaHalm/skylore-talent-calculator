@@ -22,7 +22,7 @@ const AllSkills = ({ skills, ultimates }) => {
         urlSkills.push(`${index}000`);
       }
       const url = `${pathname}?skills=${urlSkills.join("-")}&passives=${urlPassiveSkillsString}`;
-      router.replace(url);
+      router.replace(url,{ scroll: false });
     },
     [searchParams]
   );
