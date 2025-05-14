@@ -76,8 +76,51 @@ const shadowSkills = [
   },
 ];
 
+const shadowPassives = [
+  { name: "Pname0",
+    index: 0,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname1",
+    index: 1,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname2",
+    index: 2,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname3",
+    index: 3,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname4",
+    index: 4,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname5",
+    index: 5,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname6",
+    index: 6,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname7",
+    index: 7,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+]
+
 shadowUltimates.map(ult => ult.shards = shadowShards[ult.index])
 
 shadowSkills.map(skill => skill.shards = shadowShards[skill.index])
 
-export {shadowUltimates,shadowSkills};
+export {shadowUltimates,shadowSkills, shadowPassives};
