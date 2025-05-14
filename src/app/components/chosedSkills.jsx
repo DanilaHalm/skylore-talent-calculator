@@ -21,7 +21,7 @@ const ChosedSkills = ({ skills }) => {
             <div className="w-full max-w-lg flex flex-row h-[16vh] bg-orange-200">
               <div className="w-1/2 flex flex-col">
                 <div className="flex flex-row">
-                  <div onClick={() => setIsDescActive(!isDescActive)} className={`h-[8vh] aspect-square bg-[url(../../public/mageult.jpg)] bg-size-[95%] bg-no-repeat bg-center`}>
+                  <div onClick={() => setIsDescActive(!isDescActive)} className={`h-[8vh] aspect-square bg-[url(../../public/mageult.jpg)] bg-size-[105%] bg-no-repeat bg-center`}>
                     img
                   </div>
                   <SkillShards skillIndex={skill.index} />
