@@ -20,7 +20,7 @@ const SkillBar = () => {
       <AllSkills skills={skills} ultimates={ultimates} />
       <AllPassives passives={passives}/>
       <ChosedSkills skills={[...skills, ...ultimates]} />
-      <ChosedPassives />
+      <ChosedPassives passives={passives}/>
     </div>
   );
 };
