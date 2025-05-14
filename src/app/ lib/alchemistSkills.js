@@ -77,8 +77,43 @@ const alchemistSkills = [
   },
 ];
 
+const alchemistPassives = [
+  { name: "Pname0",
+    index: 0,
+    desc: "description"
+  },
+  { name: "Pname1",
+    index: 1,
+    desc: "description"
+  },
+  { name: "Pname2",
+    index: 2,
+    desc: "description"
+  },
+  { name: "Pname3",
+    index: 3,
+    desc: "description"
+  },
+  { name: "Pname4",
+    index: 4,
+    desc: "description"
+  },
+  { name: "Pname5",
+    index: 5,
+    desc: "description"
+  },
+  { name: "Pname6",
+    index: 6,
+    desc: "description"
+  },
+  { name: "Pname7",
+    index: 7,
+    desc: "description"
+  },
+]
+
 alchemistUltimates.map(ult => ult.shards = alchemistShards[ult.index])
 
 alchemistSkills.map(skill => skill.shards = alchemistShards[skill.index])
 
-export {alchemistUltimates,alchemistSkills};
+export {alchemistUltimates,alchemistSkills, alchemistPassives};
