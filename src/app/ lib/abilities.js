@@ -1,29 +1,34 @@
-import { mageUltimates, mageSkills } from "./mageSkills";
-import { hunterUltimates, hunterSkills } from "./hunterSkills";
-import { shadowUltimates, shadowSkills } from "./shadowSkills";
-import { warriorUltimates, warriorSkills } from "./warriorSkills";
-import { alchemistUltimates, alchemistSkills } from "./alchemistSkills";
+import { mageUltimates, mageSkills, magePassives } from "./mageSkills";
+import { hunterUltimates, hunterSkills, hunterPassives } from "./hunterSkills";
+import { shadowUltimates, shadowSkills, shadowPassives } from "./shadowSkills";
+import { warriorUltimates, warriorSkills, warriorPassives } from "./warriorSkills";
+import { alchemistUltimates, alchemistSkills, alchemistPassives } from "./alchemistSkills";
 
 const abilities = {
   mage: {
     ultimates: mageUltimates, 
-    skills: mageSkills
+    skills: mageSkills,
+    passives: magePassives,
   },
   hunter: {
     ultimates: hunterUltimates, 
-    skills: hunterSkills
+    skills: hunterSkills,
+    passives: hunterPassives,
   },
   shadow: {
     ultimates: shadowUltimates, 
-    skills: shadowSkills
+    skills: shadowSkills,
+    passives: shadowPassives,
   },
   warrior: { 
     ultimates: warriorUltimates, 
-    skills: warriorSkills 
+    skills: warriorSkills,
+    passives: warriorPassives,
   },
   alchemist: {
     ultimates: alchemistUltimates, 
-    skills: alchemistSkills
+    skills: alchemistSkills,
+    passives: alchemistPassives,
   },
 };
 
