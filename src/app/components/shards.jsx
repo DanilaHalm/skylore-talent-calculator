@@ -20,7 +20,7 @@ const Shards = ({ skillIndex, shardIndex }) => {
       urlSkills.splice(activeSkillIdx, 1, newActiveSkill.join(""));
       const url = `${pathname}?skills=${urlSkills.join("-")}&passives=${urlPassives}`;
 
-      router.replace(url);
+      router.replace(url,{ scroll: false });
     },
     [searchParams]
   );
