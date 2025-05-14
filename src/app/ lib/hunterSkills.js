@@ -76,8 +76,51 @@ const hunterSkills = [
   },
 ];
 
+const hunterPassives = [
+  { name: "Pname0",
+    index: 0,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname1",
+    index: 1,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname2",
+    index: 2,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname3",
+    index: 3,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname4",
+    index: 4,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname5",
+    index: 5,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname6",
+    index: 6,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+  { name: "Pname7",
+    index: 7,
+    desc: "description",
+    icon: "icon.jpg"
+  },
+]
+
 hunterUltimates.map(ult => ult.shards = hunterShards[ult.index])
 
 hunterSkills.map(skill => skill.shards = hunterShards[skill.index])
 
-export {hunterUltimates,hunterSkills};
+export {hunterUltimates,hunterSkills, hunterPassives};
