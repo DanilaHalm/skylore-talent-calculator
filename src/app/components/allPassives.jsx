@@ -3,7 +3,7 @@
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 
-const AllPassives = (passives) => {
+const AllPassives = ({passives}) => {
   
   const router = useRouter()
   const pathname = usePathname()
