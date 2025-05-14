@@ -19,7 +19,7 @@ const ChosedSkills = ({ skills }) => {
         return (
           <div className="flex items-center flex-col w-screen bg-yellow-200" key={skill.name + "add"}>
             <div className="w-full max-w-lg flex flex-row h-[16vh] bg-orange-200">
-              <div className="w-1/2 flex flex-col p-2">
+              <div className="w-1/2 flex flex-col p-1">
                 <div className="flex flex-row">
                   <div onClick={() => setIsDescActive(!isDescActive)} className={`h-[8vh] aspect-square bg-[url(../../public/mageult.jpg)] bg-cover bg-no-repeat bg-center`}>
                     img
