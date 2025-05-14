@@ -3,43 +3,7 @@
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 
-const passives = [
-  { name: "Pname0",
-    index: 0,
-    desc: "description"
-  },
-  { name: "Pname1",
-    index: 1,
-    desc: "description"
-  },
-  { name: "Pname2",
-    index: 2,
-    desc: "description"
-  },
-  { name: "Pname3",
-    index: 3,
-    desc: "description"
-  },
-  { name: "Pname4",
-    index: 4,
-    desc: "description"
-  },
-  { name: "Pname5",
-    index: 5,
-    desc: "description"
-  },
-  { name: "Pname6",
-    index: 6,
-    desc: "description"
-  },
-  { name: "Pname7",
-    index: 7,
-    desc: "description"
-  },
-]
-
-
-const AllPassives = () => {
+const AllPassives = (passives) => {
   
   const router = useRouter()
   const pathname = usePathname()
