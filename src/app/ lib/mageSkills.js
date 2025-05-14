@@ -6,7 +6,7 @@ const mageUltimates = [
     name: "name0",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "../../public/mageult.jpg",
   },
   {
     index: 9,
