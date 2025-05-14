@@ -59,7 +59,7 @@ const AllPassives = () => {
       urlSkills.push(`${index}`)
     }
     const url = `${pathname}?skills=${urlActiveSkillsString}&passives=${urlSkills.join("")}`
-    router.replace(url)
+    router.replace(url,{ scroll: false })
 },[searchParams])
 
 
