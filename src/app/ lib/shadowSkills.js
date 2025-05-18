@@ -8,13 +8,13 @@ const shadowUltimates = [
     requiredLvl: "reqLvl",
     icon: "invisibility.jpg",
   },
-  {
-    index: 9,
-    name: "name9",
-    description: "description",
-    requiredLvl: "reqLvl",
-    icon: "icon.jpg",
-  },
+  //{
+  //  index: 9,
+  //  name: "name9",
+  //  description: "description",
+  //  requiredLvl: "reqLvl",
+  //  icon: "icon.jpg",
+  //},
 ];
 
 const shadowSkills = [
