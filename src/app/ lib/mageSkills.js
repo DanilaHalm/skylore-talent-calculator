@@ -3,18 +3,18 @@ import mageShards from "./mageShards"
 const mageUltimates = [
   {
     index: 0,
-    name: "name0",
+    name: "Destruction",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "../../public/mageult.jpg",
+    icon: "destruction.jpg",
   },
-  {
-    index: 9,
-    name: "name9",
-    description: "description",
-    requiredLvl: "reqLvl",
-    icon: "icon.jpg",
-  },
+  //{
+  //  index: 9,
+  //  name: "name9",
+  //  description: "description",
+  //  requiredLvl: "reqLvl",
+  //  icon: "icon.jpg",
+  //},
 ];
 
 mageUltimates.map(ult => ult.shards = mageShards[ult.index])
@@ -22,59 +22,59 @@ mageUltimates.map(ult => ult.shards = mageShards[ult.index])
 const mageSkills = [
   {
     index: 1,
-    name: "name1",
+    name: "Fireball",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "fireball.jpg",
   },
   {
     index: 2,
-    name: "name2",
+    name: "Ice Sphere",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "iceSphere.jpg",
   },
   {
     index: 3,
-    name: "name3",
+    name: "Energy Wave",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "energyWave.jpg",
   },
   {
     index: 4,
-    name: "name4",
+    name: "Space Tear",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "spaceTear.jpg",
   },
   {
     index: 5,
-    name: "name5",
+    name: "Doppelganger",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "doppelganger.jpg",
   },
   {
     index: 6,
     name: "name6",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "teleportation.jpg",
   },
   {
     index: 7,
     name: "name7",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "energyTranslocation.jpg",
   },
   {
     index: 8,
     name: "name8",
     description: "description",
     requiredLvl: "reqLvl",
-    icon: "icon.jpg",
+    icon: "chainLightning.jpg",
   },
 ];
 
