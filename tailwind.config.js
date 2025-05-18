@@ -17,7 +17,6 @@ module.exports = {
         Warrior: "url('/public/Warrior.png')",
         Shadow: "url('/public/Shadow.png')",
         Alchemist: "url('/public/Alchemist.png')",
-        destruction: "url(../../public/mage/destruction.jpg)",
       },
     },
   },

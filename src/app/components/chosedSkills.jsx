@@ -6,7 +6,6 @@ import { useSearchParams, usePathname } from "next/navigation";
 
 const ChosedSkills = ({ skills }) => {
   const searchParams = useSearchParams();
-  const pathname = usePathname();
   const [isDescActive, setIsDescActive] = useState(false);
   const urlSkills = searchParams
     .get("skills")
@@ -24,7 +23,7 @@ const ChosedSkills = ({ skills }) => {
                 <div className="flex flex-row">
                   <div
                     onClick={() => setIsDescActive(!isDescActive)}
-                    className={`h-[8vh] aspect-square  bg-cover bg-no-repeat bg-center rounded-md`}
+                    className={`h-[8vh] aspect-square bg-cover bg-no-repeat bg-center rounded-md ${skill.icon}`}
                   >
                     img
                   </div>
