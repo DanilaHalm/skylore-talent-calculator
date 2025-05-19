@@ -44,36 +44,187 @@ input[type="radio"]:checked {
   background-image: url("../../public/Alchemist.png");
 }
 
-.destruction {
+/* ------------Mage----------------- */
+
+.Destruction {
   background-image: url("../../public/mage/destruction.jpg");
 }
 
-.fireball {
+.Fireball {
   background-image: url("../../public/mage/fireball.jpg");
 }
 
-.iceSphere {
+.IceSphere {
   background-image: url("../../public/mage/iceSphere.jpg");
 }
-.spaceTear {
+.SpaceTear {
   background-image: url("../../public/mage/spaceTear.jpg");
 }
 
-.teleportation {
+.Teleportation {
   background-image: url("../../public/mage/teleportation.jpg");
 }
 
-.chainLightning {
+.ChainLightning {
   background-image: url("../../public/mage/chainLightning.jpg");
 }
 
-.doppelganger {
+.Doppelganger {
   background-image: url("../../public/mage/doppelganger.jpg");
 }
-.energyTranslocation {
+
+.EnergyTranslocation {
   background-image: url("../../public/mage/energyTranslocation.jpg");
 }
 
-.energyWave {
+.EnergyWave {
   background-image: url("../../public/mage/energyWave.jpg");
+}
+
+/* ------------Shadow----------------- */
+
+.Invisibility {
+  background-image: url("../../public/shadow/invisibility.jpg");
+}
+
+.ShadowStrike {
+  background-image: url("../../public/shadow/shadowStrike.jpg");
+}
+
+.TwilightBlade {
+  background-image: url("../../public/shadow/twilightBlade.jpg");
+}
+.Shadowstep {
+  background-image: url("../../public/shadow/shadowstep.jpg");
+}
+
+.FanOfBlades {
+  background-image: url("../../public/shadow/fanOfBlades.jpg");
+}
+
+.ThousandBlades {
+  background-image: url("../../public/shadow/thousandBlades.jpg");
+}
+
+.DarkSaturation {
+  background-image: url("../../public/shadow/darkSaturation.jpg");
+}
+
+.SoulCutter {
+  background-image: url("../../public/shadow/soulCutter.jpg");
+}
+
+.DarkPack {
+  background-image: url("../../public/shadow/darkPack.jpg");
+}
+
+/* ------------Warrior----------------- */
+
+.Aegis {
+  background-image: url("../../public/warrior/aegis.jpg");
+}
+
+.HammerOfWrath {
+  background-image: url("../../public/warrior/hammerOfWrath.jpg");
+}
+
+.HeroicBurst {
+  background-image: url("../../public/warrior/heroicBurst.jpg");
+}
+.Taunt {
+  background-image: url("../../public/warrior/taunt.jpg");
+}
+
+.BladeBarrier {
+  background-image: url("../../public/warrior/bladeBarrier.jpg");
+}
+
+.ColossusStrike {
+  background-image: url("../../public/warrior/colossusStrike.jpg");
+}
+
+.LivingArmor {
+  background-image: url("../../public/warrior/livingArmor.jpg");
+}
+
+.ImmortalDefenders {
+  background-image: url("../../public/warrior/immortalDefenders.jpg");
+}
+
+.SkyArsenal {
+  background-image: url("../../public/warrior/skyArsenal.jpg");
+}
+
+/* ------------Hunter----------------- */
+
+.SummonSpirit {
+  background-image: url("../../public/hunter/summonSpirit.jpg");
+}
+
+.PhantomArrow {
+  background-image: url("../../public/hunter/phantomArrow.jpg");
+}
+
+.Multishot {
+  background-image: url("../../public/hunter/multishot.jpg");
+}
+.StormOfArrows {
+  background-image: url("../../public/hunter/stormOfArrows.jpg");
+}
+
+.Leap {
+  background-image: url("../../public/hunter/leap.jpg");
+}
+
+.SpiritRage {
+  background-image: url("../../public/hunter/spiritRage.jpg");
+}
+
+.AcidRain {
+  background-image: url("../../public/hunter/acidRain.jpg");
+}
+
+.LordOfTheSky {
+  background-image: url("../../public/hunter/lordOfTheSky.jpg");
+}
+
+.FalconHunting {
+  background-image: url("../../public/hunter/summonSpirit.jpg");
+}
+
+/* ------------Alchemist----------------- */
+
+.ElixirOfLife {
+  background-image: url("../../public/alchemist/elixirOfLife.jpg");
+}
+
+.DirectionalTransformation {
+  background-image: url("../../public/alchemist/directionalTransformation.jpg");
+}
+
+.TransmutationCircle {
+  background-image: url("../../public/alchemist/transmutationCircle.jpg");
+}
+
+.HealingElixir {
+  background-image: url("../../public/alchemist/healingElixir.jpg");
+}
+.ProtectiveBarrier {
+  background-image: url("../../public/alchemist/protectiveBarrier.jpg");
+}
+
+.UnstableMixture {
+  background-image: url("../../public/alchemist/unstableMixture.jpg");
+}
+
+.HealingTransmutation {
+  background-image: url("../../public/alchemist/healingTransmutation.jpg");
+}
+
+.PotionMaking {
+  background-image: url("../../public/alchemist/potionMaking.jpg");
+}
+
+.DistortionSeal {
+  background-image: url("../../public/alchemist/distortionSeal.jpg");
 }
