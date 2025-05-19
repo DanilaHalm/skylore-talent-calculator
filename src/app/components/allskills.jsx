@@ -22,7 +22,7 @@ const AllSkills = ({ skills, ultimates }) => {
         urlSkills.push(`${index}000`);
       }
       const url = `${pathname}?skills=${urlSkills.join("-")}&passives=${urlPassiveSkillsString}`;
-      router.replace(url,{ scroll: false });
+      router.replace(url, { scroll: false });
     },
     [searchParams]
   );
@@ -60,16 +60,18 @@ const AllSkills = ({ skills, ultimates }) => {
     <div className="flex flex-col my-2">
       <div className="grid grid-cols-2 justify-items-center gap-4 justify-around mb-2">
         {ultimates.map((skill) => {
+          const isDisabled = checkSkill(`${skill.index}`, true);
+          const isActive = checkActive(`${skill.index}`);
+          const iconName = skill.name.replaceAll(" ", "");
+          console.log(iconName);
+
           return (
-            <div
-              key={skill.name}
-              className={`w-14 h-14 ${checkActive(`${skill.index}`) ? "bg-yellow-800" : "bg-yellow-200"}`}
-            >
+            <div key={skill.name} className={`w-14 h-14  bg-${iconName} bg-cover bg-no-repeat bg-center`}>
               <input
                 type="checkbox"
                 onClick={() => setSkill(skill.index)}
-                disabled={checkSkill(`${skill.index}`, true)}
-                className="opacity-0 w-14 h-14 bg-green-200"
+                disabled={isDisabled}
+                className="opacity-0 w-14 h-14"
               />
             </div>
           );
@@ -78,15 +80,16 @@ const AllSkills = ({ skills, ultimates }) => {
 
       <div className="grid grid-cols-4 gap-4 justify-around">
         {skills.map((skill) => {
+          const isDisabled = checkSkill(`${skill.index}`, false);
+          const isActive = checkActive(`${skill.index}`);
+          const iconName = skill.name.replaceAll(" ", "");
+
           return (
-            <div
-              key={skill.name}
-              className={`w-14 h-14 ${checkActive(`${skill.index}`) ? "bg-blue-800" : "bg-blue-200"}`}
-            >
+            <div key={skill.name} className={`w-14 h-14 bg-${iconName} bg-cover bg-no-repeat bg-center`}>
               <input
                 type="checkbox"
                 onClick={() => setSkill(skill.index)}
-                disabled={checkSkill(`${skill.index}`, false)}
+                disabled={isDisabled}
                 className="opacity-0 w-14 h-14 bg-green-200"
               />
             </div>
