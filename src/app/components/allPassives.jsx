@@ -47,8 +47,9 @@ const AllPassives = ({passives}) => {
       <div className="grid grid-cols-5 gap-3 justify-around my-3">
       
       {passives.map((skill) => {
-      return (
-        <div key={skill.name} className={`w-14 h-14 ${checkActive(`${skill.index}`) ? "bg-blue-800" : "bg-blue-200"} rounded-full`}>
+        const isActive = checkActive(`${skill.index}`)
+        return (
+        <div key={skill.name} className={`w-14 h-14 test bg-cover bg-no-repeat bg-center rounded-full`}>
 
 
           <input type="checkbox" 
