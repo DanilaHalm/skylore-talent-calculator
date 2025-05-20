@@ -3,8 +3,7 @@
 import { useState } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
-const ChosedPassives = ({passives}) => {
-
+const ChosedPassives = ({ passives }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const pathname = usePathname();
@@ -17,10 +16,12 @@ const ChosedPassives = ({passives}) => {
     <div className="flex flex-col  w-full max-w-lg">
       <div className="h-[12vh] bg-green-500 flex flex-row justify-around items-center">
         {chosed.map((passive) => {
+          const iconName = passive.name.replaceAll(" ", "");
+
           return (
             <div
               key={passive.name}
-              className="h-[8vh] aspect-square bg-purple-500 rounded-full"
+              className={`h-[8vh] aspect-square bg-purple-500 rounded-full ${iconName} bg-cover bg-no-repeat bg-center`}
               onClick={() => setIsDescActive(!isDescActive)}
             ></div>
           );
@@ -29,7 +30,7 @@ const ChosedPassives = ({passives}) => {
       {isDescActive && (
         <div className="flex flex-col">
           {chosed.map((passive) => {
-            return <div key={passive.name+passive.desc}>{passive.desc}</div>;
+            return <div key={passive.name + passive.desc}>{passive.desc}</div>;
           })}
         </div>
       )}

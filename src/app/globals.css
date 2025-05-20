@@ -25,28 +25,28 @@ input[type="radio"]:checked {
 }
 
 .Mage-bg {
-  background-image: url("../../public/Mage.png");
+  background-image: url("../../public/mage/Mage.png");
 }
 
 .Hunter-bg {
-  background-image: url("../../public/Hunter.png");
+  background-image: url("../../public/hunter/Hunter.png");
 }
 
 .Warrior-bg {
-  background-image: url("../../public/Warrior.png");
+  background-image: url("../../public/warrior/Warrior.png");
 }
 
 .Shadow-bg {
-  background-image: url("../../public/Shadow.png");
+  background-image: url("../../public/shadow/Shadow.png");
 }
 
 .Alchemist-bg {
-  background-image: url("../../public/Alchemist.png");
+  background-image: url("../../public/alchemist/Alchemist.png");
 }
 
 /* ------------Mage----------------- */
 
-.test{
+.test {
   background-image: url("../../public/test2.png");
 }
 
@@ -61,6 +61,7 @@ input[type="radio"]:checked {
 .IceSphere {
   background-image: url("../../public/mage/iceSphere.jpg");
 }
+
 .SpaceTear {
   background-image: url("../../public/mage/spaceTear.jpg");
 }
@@ -200,6 +201,7 @@ input[type="radio"]:checked {
 .HeroicBurst {
   background-image: url("../../public/warrior/heroicBurst.jpg");
 }
+
 .Taunt {
   background-image: url("../../public/warrior/taunt.jpg");
 }
@@ -224,6 +226,37 @@ input[type="radio"]:checked {
   background-image: url("../../public/warrior/skyArsenal.jpg");
 }
 
+.Adaptation {
+  background-image: url("../../public/warrior/adaptation.png");
+}
+
+.CombatTraining {
+  background-image: url("../../public/warrior/combatTraining.png");
+}
+
+.Counterstrike {
+  background-image: url("../../public/warrior/counterstrike.png");
+}
+
+.DenialOfPain {
+  background-image: url("../../public/warrior/denialOfPain.png");
+}
+
+.Inspiration {
+  background-image: url("../../public/warrior/inspiration.png");
+}
+
+.SeriesOfBlows {
+  background-image: url("../../public/warrior/seriesOfBlows.png");
+}
+
+.UnderProtection {
+  background-image: url("../../public/warrior/underProtection.png");
+}
+
+.Veteran {
+  background-image: url("../../public/warrior/veteran.png");
+}
 /* ------------Hunter----------------- */
 
 .SummonSpirit {
@@ -237,6 +270,7 @@ input[type="radio"]:checked {
 .Multishot {
   background-image: url("../../public/hunter/multishot.jpg");
 }
+
 .StormOfArrows {
   background-image: url("../../public/hunter/stormOfArrows.jpg");
 }
@@ -261,6 +295,38 @@ input[type="radio"]:checked {
   background-image: url("../../public/hunter/falconHunting.jpg");
 }
 
+.AnimalInstinct {
+  background-image: url("../../public/hunter/animalInstinct.png");
+}
+
+.EasyPrey {
+  background-image: url("../../public/hunter/easyPrey.png");
+}
+
+.ExpertShooter {
+  background-image: url("../../public/hunter/expertShooter.png");
+}
+
+.FirstShot {
+  background-image: url("../../public/hunter/firstShot.png");
+}
+
+.RescuePirouette {
+  background-image: url("../../public/hunter/rescuePirouette.png");
+}
+
+.SearchForVulnerabilities {
+  background-image: url("../../public/hunter/searchForVulnerabilities.png");
+}
+
+.SpiritualConnection {
+  background-image: url("../../public/hunter/spiritualConnection.png");
+}
+
+.SurvivalTactics {
+  background-image: url("../../public/hunter/survivalTactics.png");
+}
+
 /* ------------Alchemist----------------- */
 
 .ElixirOfLife {
@@ -278,6 +344,7 @@ input[type="radio"]:checked {
 .HealingElixir {
   background-image: url("../../public/alchemist/healingElixir.jpg");
 }
+
 .ProtectiveBarrier {
   background-image: url("../../public/alchemist/protectiveBarrier.jpg");
 }
@@ -296,4 +363,36 @@ input[type="radio"]:checked {
 
 .DistortionSeal {
   background-image: url("../../public/alchemist/distortionSeal.jpg");
+}
+
+.AlchemistsRevenge {
+  background-image: url("../../public/alchemist/alchemistsRevenge.png");
+}
+
+.Arsonist {
+  background-image: url("../../public/alchemist/arsonist.png");
+}
+
+.BracingTonic {
+  background-image: url("../../public/alchemist/bracingTonic.png");
+}
+
+.CarefulHandling {
+  background-image: url("../../public/alchemist/carefulHandling.png");
+}
+
+.Dispersion {
+  background-image: url("../../public/alchemist/dispersion.png");
+}
+
+.ForbiddenComponent {
+  background-image: url("../../public/alchemist/forbiddenComponent.png");
+}
+
+.HelpingHand {
+  background-image: url("../../public/alchemist/helpingHand.png");
+}
+
+.NoRoomForError {
+  background-image: url("../../public/alchemist/noRoomForError.png");
 }
