@@ -85,7 +85,7 @@ const AllSkills = ({ skills, ultimates }) => {
           const iconName = skill.name.replaceAll(" ", "");
 
           return (
-            <div key={skill.name} className={`w-14 h-14 bg-${iconName} bg-cover bg-no-repeat bg-center`}>
+            <div key={skill.name} className={`w-14 h-14 bg-${iconName} bg-cover bg-no-repeat bg-center`}>img
               <input
                 type="checkbox"
                 onClick={() => setSkill(skill.index)}
