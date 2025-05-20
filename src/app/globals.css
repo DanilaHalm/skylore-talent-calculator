@@ -46,6 +46,10 @@ input[type="radio"]:checked {
 
 /* ------------Mage----------------- */
 
+.test{
+  background-image: url("../../public/mage/destruction.jpg");
+}
+
 .Destruction {
   background-image: url("../../public/mage/destruction.jpg");
 }
