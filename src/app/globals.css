@@ -85,6 +85,38 @@ input[type="radio"]:checked {
   background-image: url("../../public/mage/energyWave.jpg");
 }
 
+.EnergyAbsorption {
+  background-image: url("../../public/mage/energyAbsorption.png");
+}
+
+.FrostShield {
+  background-image: url("../../public/mage/frostShield.png");
+}
+
+.HeatHaze {
+  background-image: url("../../public/mage/heatHaze.png");
+}
+
+.IllusoryDeceit {
+  background-image: url("../../public/mage/illusoryDeceit.png");
+}
+
+.MirrorSupport {
+  background-image: url("../../public/mage/mirrorSupport.png");
+}
+
+.SecretSight {
+  background-image: url("../../public/mage/secretSight.png");
+}
+
+.Self-Reliance {
+  background-image: url("../../public/mage/self-Reliance.png");
+}
+
+.Sorcerer'sIngenuity {
+  background-image: url("../../public/mage/sorcerer'sIngenuity.png");
+}
+
 /* ------------Shadow----------------- */
 
 .Invisibility {
