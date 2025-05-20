@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const ClassLink = ({ class_link }) => {
   const pathname = usePathname();
-  const isSctive = pathname === "/" + class_link.toLowerCase()
+  const isActive = pathname === "/" + class_link.toLowerCase()
   return (
     <div
       className={`w-14 h-14 ${class_link}-bg ${isActive ? "border-green-500" : "grayscale"} border-2 bg-cover bg-no-repeat bg-center rounded-full`}
