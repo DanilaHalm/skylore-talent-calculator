@@ -98,6 +98,7 @@ input[type="radio"]:checked {
 .TwilightBlade {
   background-image: url("../../public/shadow/twilightBlade.jpg");
 }
+
 .Shadowstep {
   background-image: url("../../public/shadow/shadowstep.jpg");
 }
@@ -120,6 +121,38 @@ input[type="radio"]:checked {
 
 .DarkPack {
   background-image: url("../../public/shadow/darkPack.jpg");
+}
+
+.HiddenThreat {
+  background-image: url("../../public/shadow/hiddenThreat.png");
+}
+
+.ShadowDefense {
+  background-image: url("../../public/shadow/shadowDefense.png");
+}
+
+.ShadowTrade {
+  background-image: url("../../public/shadow/shadowTrade.png");
+}
+
+.PoisonousTrace {
+  background-image: url("../../public/shadow/poisonousTrace.png");
+}
+
+.DarkConduit {
+  background-image: url("../../public/shadow/darkConduit.png");
+}
+
+.GrandEntrance {
+  background-image: url("../../public/shadow/grandEntrance.png");
+}
+
+.PoisonedBlood {
+  background-image: url("../../public/shadow/poisonedBlood.png");
+}
+
+.VeilOfDarkness {
+  background-image: url("../../public/shadow/veilOfDarkness.png");
 }
 
 /* ------------Warrior----------------- */
