@@ -56,7 +56,7 @@ const Shards = ({ skillIndex, shardIndex }) => {
   return (
     <div className="flex flex-col justify-around h-[90%] w-7 pl-1 pt-1">
       <input type="radio" className={`bg-cover bg-no-repeat bg-center ${isCheckedFirst ? shardsBg[shardIndex]["active"] : shardsBg[shardIndex]["disabled"]}`} data-id={1} checked={isCheckedFirst} onChange={(e) => setShard(e)}></input>
-      <input type="radio" className={`bg-cover bg-no-repeat bg-center ${isCheckedFirst ? shardsBg[shardIndex]["active"] : shardsBg[shardIndex]["disabled"]}`} data-id={2} checked={isCheckedSecond} onChange={(e) => setShard(e)}></input>
+      <input type="radio" className={`bg-cover bg-no-repeat bg-center ${isCheckedSecond ? shardsBg[shardIndex]["active"] : shardsBg[shardIndex]["disabled"]}`} data-id={2} checked={isCheckedSecond} onChange={(e) => setShard(e)}></input>
     </div>
   );
 };
