@@ -13,8 +13,6 @@ input[type="radio"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: #177519;
-  
-  
   height: 15px;
   width: 15px;
   transform: rotate(45deg);
@@ -23,6 +21,26 @@ input[type="radio"] {
 input[type="radio"]:checked {
   background: #4ced4f;
 }
+
+.tier1active {
+  background-image: url("../../public/tier1active.png");
+}
+.tier1disabled {
+  background-image: url("../../public/tier1disabled.png");
+}
+.tier2active {
+  background-image: url("../../public/tier2active.png");
+}
+.tier2disabled {
+  background-image: url("../../public/tier2disabled.png");
+}
+.tier3active {
+  background-image: url("../../public/tier3active.png");
+}
+.tier3disabled {
+  background-image: url("../../public/tier3disabled.png");
+}
+
 
 .Mage-bg {
   background-image: url("../../public/mage/Mage.png");
