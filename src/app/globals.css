@@ -49,7 +49,6 @@ input[type="radio"] {
   background-image: url("../../public/t3disabled.png");
 }
 
-
 .Mage-bg {
   background-image: url("../../public/mage/Mage.png");
 }
@@ -71,10 +70,6 @@ input[type="radio"] {
 }
 
 /* ------------Mage----------------- */
-
-.test {
-  background-image: url("../../public/test2.png");
-}
 
 .Destruction {
   background-image: url("../../public/mage/destruction.jpg");

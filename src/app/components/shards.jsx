@@ -20,7 +20,7 @@ const Shards = ({ skillIndex, shardIndex }) => {
       urlSkills.splice(activeSkillIdx, 1, newActiveSkill.join(""));
       const url = `${pathname}?skills=${urlSkills.join("-")}&passives=${urlPassives}`;
 
-      router.replace(url,{ scroll: false });
+      router.replace(url, { scroll: false });
     },
     [searchParams]
   );
@@ -33,30 +33,45 @@ const Shards = ({ skillIndex, shardIndex }) => {
       return false;
     }
   };
-  
+
   const shardsBg = {
     1: {
       active: "tier1active",
-      disabled: "tier1disabled"
+      disabled: "tier1disabled",
     },
     2: {
       active: "tier2active",
-      disabled: "tier2disabled"
+      disabled: "tier2disabled",
     },
     3: {
       active: "tier3active",
-      disabled: "tier3disabled"
+      disabled: "tier3disabled",
     },
-  }
+  };
 
-
-  const isCheckedFirst = checkShard("1")
-  const isCheckedSecond = checkShard("2")
+  const isCheckedFirst = checkShard("1");
+  const isCheckedSecond = checkShard("2");
 
   return (
-    <div className="flex flex-col justify-around h-[90%] w-7 pl-1 pt-1 bg-cover bg-no-repeat bg-center shardsPair">
-      <input type="radio" className={`bg-cover bg-no-repeat bg-center ${isCheckedFirst ? shardsBg[shardIndex]["active"] : shardsBg[shardIndex]["disabled"]}`} data-id={1} checked={isCheckedFirst} onChange={(e) => setShard(e)}></input>
-      <input type="radio" className={`bg-cover bg-no-repeat bg-center ${isCheckedSecond ? shardsBg[shardIndex]["active"] : shardsBg[shardIndex]["disabled"]}`} data-id={2} checked={isCheckedSecond} onChange={(e) => setShard(e)}></input>
+    <div className="flex flex-col justify-around items-center h-[90%] w-7 bg-cover bg-no-repeat bg-center shardsPair">
+      <input
+        type="radio"
+        className={`bg-cover bg-no-repeat bg-center ${
+          isCheckedFirst ? shardsBg[shardIndex]["active"] : shardsBg[shardIndex]["disabled"]
+        }`}
+        data-id={1}
+        checked={isCheckedFirst}
+        onChange={(e) => setShard(e)}
+      ></input>
+      <input
+        type="radio"
+        className={`bg-cover bg-no-repeat bg-center ${
+          isCheckedSecond ? shardsBg[shardIndex]["active"] : shardsBg[shardIndex]["disabled"]
+        }`}
+        data-id={2}
+        checked={isCheckedSecond}
+        onChange={(e) => setShard(e)}
+      ></input>
     </div>
   );
 };
