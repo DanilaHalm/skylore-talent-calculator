@@ -142,8 +142,7 @@ const hunterSkills = [
   },
   {
     index: 7,
-    name: "Multishot p
-",
+    name: "Multishot",
     description: "description",
     ru: {
       name: "Залп",
