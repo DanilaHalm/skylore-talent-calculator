@@ -21,6 +21,10 @@ input[type="radio"] {
   background-image: url("../../public/shardsBackground.jpg");
 }
 
+.shardsPair {
+  background-image: url("../../public/shardsPair.jpg");
+}
+
 .tier1active {
   background-image: url("../../public/t1active.png");
 }
