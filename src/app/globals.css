@@ -12,14 +12,9 @@ input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: #177519;
   height: 15px;
   width: 15px;
   transform: rotate(45deg);
-}
-
-input[type="radio"]:checked {
-  background: #4ced4f;
 }
 
 .tier1active {
