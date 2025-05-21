@@ -4,7 +4,6 @@ const hunterUltimates = [
   {
     index: 0,
     name: "Summon Spirit",
-    props: {}
     description: "description",
     ru: {
       name: "Призыв духа",
