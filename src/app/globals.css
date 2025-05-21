@@ -12,29 +12,29 @@ input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transform: rotate(45deg);
+  transform: rotate(-45deg);
   height: 15px;
   width: 15px;
 }
 
 
 .tier1active {
-  background-image: url("../../public/tier1active.jpg");
+  background-image: url("../../public/t1active.jpg");
 }
 .tier1disabled {
-  background-image: url("../../public/testshard.jpg");
+  background-image: url("../../public/t1disabled.jpg");
 }
 .tier2active {
-  background-image: url("../../public/tier2active.jpg");
+  background-image: url("../../public/t2active.jpg");
 }
 .tier2disabled {
-  background-image: url("../../public/tier2disabled.jpg");
+  background-image: url("../../public/t2disabled.jpg");
 }
 .tier3active {
-  background-image: url("../../public/tier3active.jpg");
+  background-image: url("../../public/t3active.jpg");
 }
 .tier3disabled {
-  background-image: url("../../public/tier3disabled.jpg");
+  background-image: url("../../public/t3disabled.jpg");
 }
 
 
