@@ -31,7 +31,7 @@ const ChosedSkills = ({ skills }) => {
                   </div>
                   <SkillShards skillIndex={skill.index} />
                 </div>
-                <div className="flex flex-col text-xs">
+                <div className="flex flex-col text-xs overflow-y-scroll">
                   <p className="font-bold">{skill.ru.name}</p>
 {skill.ru.props.map(prop => {
                   return (<p>{prop}</p>)
@@ -40,7 +40,7 @@ const ChosedSkills = ({ skills }) => {
               </div>
               <ChosedShardsDesc shards={skill.shards} skillIndex={skill.index} />
             </div>
-            {isDescActive && <div className="h-auto text-xs">{skill.ru.description}</div>}
+            {isDescActive && <div className="h-auto text-xs p-1">{skill.ru.description}</div>}
           </div>
         );
       })}
