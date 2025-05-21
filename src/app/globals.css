@@ -14,7 +14,6 @@ input[type="radio"] {
   -moz-appearance: none;
   height: 15px;
   width: 15px;
-  transform: rotate(45deg);
 }
 
 .tier1active {
