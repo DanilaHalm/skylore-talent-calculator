@@ -27,18 +27,20 @@ const ChosedSkills = ({ skills }) => {
                     onClick={() => setIsDescActive(!isDescActive)}
                     className={`h-[8vh] aspect-square bg-cover bg-no-repeat bg-center rounded-md ${iconName}`}
                   >
-                    img
+                    
                   </div>
                   <SkillShards skillIndex={skill.index} />
                 </div>
-                <div className="flex flex-col ">{skill.ru.props.map(prop => {
+                <div className="flex flex-col text-xs">
+                  <p className="font-bold">{skill.ru.name}</p>
+{skill.ru.props.map(prop => {
                   return (<p>{prop}</p>)
                   })}
                 </div>
               </div>
               <ChosedShardsDesc shards={skill.shards} skillIndex={skill.index} />
             </div>
-            {isDescActive && <div className="h-auto">{skill.ru.description}</div>}
+            {isDescActive && <div className="h-auto text-xs">{skill.ru.description}</div>}
           </div>
         );
       })}
