@@ -12,15 +12,17 @@ input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  transform: rotate(45deg);
   height: 15px;
   width: 15px;
 }
+
 
 .tier1active {
   background-image: url("../../public/tier1active.jpg");
 }
 .tier1disabled {
-  background-image: url("../../public/tier1disabled.jpg");
+  background-image: url("../../public/testshard.jpg");
 }
 .tier2active {
   background-image: url("../../public/tier2active.jpg");
