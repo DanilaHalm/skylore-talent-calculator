@@ -23,22 +23,22 @@ input[type="radio"]:checked {
 }
 
 .tier1active {
-  background-image: url("../../public/tier1active.png");
+  background-image: url("../../public/tier1active.jpg");
 }
 .tier1disabled {
-  background-image: url("../../public/tier1disabled.png");
+  background-image: url("../../public/tier1disabled.jpg");
 }
 .tier2active {
-  background-image: url("../../public/tier2active.png");
+  background-image: url("../../public/tier2active.jpg");
 }
 .tier2disabled {
-  background-image: url("../../public/tier2disabled.png");
+  background-image: url("../../public/tier2disabled.jpg");
 }
 .tier3active {
-  background-image: url("../../public/tier3active.png");
+  background-image: url("../../public/tier3active.jpg");
 }
 .tier3disabled {
-  background-image: url("../../public/tier3disabled.png");
+  background-image: url("../../public/tier3disabled.jpg");
 }
 
 
