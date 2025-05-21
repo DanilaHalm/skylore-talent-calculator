@@ -33,11 +33,30 @@ const Shards = ({ skillIndex, shardIndex }) => {
       return false;
     }
   };
+  
+  const shardsBg = {
+    1: {
+      active: "tier1active",
+      disabled: "tier1disabled"
+    },
+    2: {
+      active: "tier2active",
+      disabled: "tier2disabled"
+    },
+    3: {
+      active: "tier3active",
+      disabled: "tier3disabled"
+    },
+  }
+
+
+  const isCheckedFirst = checkShard("1")
+  const isCheckedSecond = checkShard("2")
 
   return (
     <div className="flex flex-col justify-around h-[90%] w-7 pl-1 pt-1">
-      <input type="radio" data-id={1} checked={checkShard("1")} onChange={(e) => setShard(e)}></input>
-      <input type="radio" data-id={2} checked={checkShard("2")} onChange={(e) => setShard(e)}></input>
+      <input type="radio" className={`${isCheckedFirst ? shardsBg[shardIndex][active] : shardsBg[shardIndex][disabled]}`} data-id={1} checked={isCheckedFirst} onChange={(e) => setShard(e)}></input>
+      <input type="radio" className={`${isCheckedFirst ? shardsBg[shardIndex][active] : shardsBg[shardIndex][disabled]}`} data-id={2} checked={isCheckedSecond} onChange={(e) => setShard(e)}></input>
     </div>
   );
 };
