@@ -1,4 +1,5 @@
 const shadowShards = {
+  ru:{
   0:{
     tier1:
       {
@@ -350,7 +351,7 @@ const shadowShards = {
       },
   },
 
-
+}
 }
 
 export default shadowShards
