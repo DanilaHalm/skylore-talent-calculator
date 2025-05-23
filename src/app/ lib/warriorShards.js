@@ -1,4 +1,5 @@
 const warriorShards = {
+  ru:{
   0:{
     tier1:
       {
@@ -350,7 +351,7 @@ const warriorShards = {
       },
   },
 
-
+}
 }
 
 export default warriorShards
