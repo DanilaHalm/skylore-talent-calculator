@@ -21,8 +21,8 @@ const ChosedShardsDesc = ({ shards, skillIndex }) => {
         if (!shard) return;
         return (
           <div key={shard.desc}>
-            <h5>{shard.name}</h5>
-            <p>{shard.desc}</p>
+            <h5>{shard.ru.name}</h5>
+            <p>{shard.ru.desc}</p>
           </div>
         );
       })}
