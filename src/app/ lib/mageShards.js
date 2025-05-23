@@ -1,4 +1,5 @@
 const mageShards = {
+  ru:{
   0:{
     tier1:
       {
@@ -350,7 +351,7 @@ const mageShards = {
       },
   },
   
-
+}
 }
 
 export default mageShards
