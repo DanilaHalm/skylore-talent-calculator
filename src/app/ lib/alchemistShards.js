@@ -1,4 +1,5 @@
 const alchemistShards = {
+ru:{
   0:{
     tier1:
       {
@@ -350,7 +351,7 @@ const alchemistShards = {
       },
   },
 
-
+}
 }
 
 export default alchemistShards
