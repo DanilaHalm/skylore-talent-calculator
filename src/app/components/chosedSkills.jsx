@@ -21,7 +21,7 @@ const ChosedSkills = ({ skills }) => {
         return (
           <div className="flex items-center flex-col w-screen bg-yellow-200" key={skill.name + "add"}>
             <div className="w-full max-w-lg flex flex-row h-[16vh] bg-orange-200">
-              <div className="w-1/2 flex flex-col p-1 chosedSkillBg">
+              <div className="w-1/2 flex flex-col p-1 chosedSkillBg bg-no-repeat bg-center bg-cover">
                 <div className="flex flex-row">
                   <div
                     onClick={() => setIsDescActive(!isDescActive)}
