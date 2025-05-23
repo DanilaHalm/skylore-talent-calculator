@@ -36,7 +36,7 @@ const ChosedSkills = ({ skills }) => {
               <ChosedShardsDesc shards={skill.shards} skillIndex={skill.index} />
             </div>
             {isDescActive && (
-              <div className="h-auto max-w-lg text-xs p-1">
+              <div className="h-auto max-w-lg text-xs p-1 bg-no-repeat bg-center bg-cover chosedSkillBg">
                 {skill.ru.props.map((prop) => {
                   return <p key={prop}>{prop}</p>;
                 })}
