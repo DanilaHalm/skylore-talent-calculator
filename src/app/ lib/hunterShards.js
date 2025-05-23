@@ -1,4 +1,5 @@
 const hunterShards = {
+  ru:{
   0:{
     tier1:
       {
@@ -350,7 +351,7 @@ const hunterShards = {
       },
   },
 
-
+}
 }
 
 export default hunterShards
