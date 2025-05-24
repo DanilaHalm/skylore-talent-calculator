@@ -18,6 +18,9 @@ module.exports = {
         Shadow: "url('/public/Shadow.png')",
         Alchemist: "url('/public/Alchemist.png')",
       },
+      length: {
+        tiny: "8px",
+      },
     },
   },
   plugins: [],

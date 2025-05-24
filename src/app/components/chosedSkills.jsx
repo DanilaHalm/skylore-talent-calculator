@@ -17,7 +17,7 @@ const ChosedSkills = ({ skills }) => {
     <div>
       {selectedSkills.map((skill) => {
         const iconName = skill.name.replaceAll(" ", "");
-
+        console.log(skill.shards);
         return (
           <div className="flex items-center flex-col w-screen bg-yellow-200" key={skill.name + "add"}>
             <div className="w-full max-w-lg flex flex-row h-[16vh] bg-orange-200">

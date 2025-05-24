@@ -63,10 +63,14 @@ const AllSkills = ({ skills, ultimates }) => {
           const isDisabled = checkSkill(`${skill.index}`, true);
           const isActive = checkActive(`${skill.index}`);
           const iconName = skill.name.replaceAll(" ", "");
-          console.log(iconName);
 
           return (
-            <div key={skill.name} className={`w-14 h-14 ${iconName} ${isDisabled ? "grayscale" : ""} ${isActive ? "border-green-500 border-2" : ""} rounded-lg bg-cover bg-no-repeat bg-center`}>
+            <div
+              key={skill.name}
+              className={`w-14 h-14 ${iconName} ${isDisabled ? "grayscale" : ""} ${
+                isActive ? "border-green-500 border-2" : ""
+              } rounded-lg bg-cover bg-no-repeat bg-center`}
+            >
               <input
                 type="checkbox"
                 onClick={() => setSkill(skill.index)}
@@ -85,7 +89,12 @@ const AllSkills = ({ skills, ultimates }) => {
           const iconName = skill.name.replaceAll(" ", "");
 
           return (
-            <div key={skill.name} className={`w-14 h-14 ${iconName} ${isDisabled ? "grayscale" : ""} ${isActive ? "border-green-500 border-2" : ""} rounded-lg bg-cover bg-no-repeat bg-center`}>
+            <div
+              key={skill.name}
+              className={`w-14 h-14 ${iconName} ${isDisabled ? "grayscale" : ""} ${
+                isActive ? "border-green-500 border-2" : ""
+              } rounded-lg bg-cover bg-no-repeat bg-center`}
+            >
               <input
                 type="checkbox"
                 onClick={() => setSkill(skill.index)}

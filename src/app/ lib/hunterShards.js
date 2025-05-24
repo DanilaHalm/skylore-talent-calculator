@@ -288,41 +288,38 @@ const hunterShards = {
         },
       },
     },
-    // 9:{
-    //   tier1:
-    //     {
-    //       1:{
-    //     name:"name",
-    //     desc:``,
-    //       },
-    //       2:{
-    //     name:"name",
-    //     desc:``,
-    //       }
-    //     },
-    //   tier2:
-    //     {
-    //       1:{
-    //     name:"name",
-    //     desc:``,
-    //       },
-    //       2:{
-    //     name:"name",
-    //     desc:``,
-    //       }
-    //     },
-    //   tier3:
-    //     {
-    //       1:{
-    //     name:"name",
-    //     desc:``,
-    //       },
-    //       2:{
-    //     name:"name",
-    //     desc:``,
-    //       }
-    //     },
-    // },
+    9: {
+      tier1: {
+        1: {
+          name: "name",
+          desc: ``,
+        },
+        2: {
+          name: "name",
+          desc: ``,
+        },
+      },
+      tier2: {
+        1: {
+          name: "name",
+          desc: ``,
+        },
+        2: {
+          name: "name",
+          desc: ``,
+        },
+      },
+      tier3: {
+        1: {
+          name: "name",
+          desc: ``,
+        },
+        2: {
+          name: "name",
+          desc: ``,
+        },
+      },
+    },
   },
 };
 

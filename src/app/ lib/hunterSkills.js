@@ -239,8 +239,8 @@ const hunterPassives = [
   },
 ];
 
-hunterUltimates.map((ult) => (ult.shards = hunterShards[ult.index]));
+hunterUltimates.map((ult) => (ult.shards = hunterShards.ru[ult.index]));
 
-hunterSkills.map((skill) => (skill.shards = hunterShards[skill.index]));
+hunterSkills.map((skill) => (skill.shards = hunterShards.ru[skill.index]));
 
 export { hunterUltimates, hunterSkills, hunterPassives };
