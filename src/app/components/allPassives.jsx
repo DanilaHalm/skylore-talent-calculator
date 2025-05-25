@@ -44,7 +44,7 @@ const AllPassives = ({ passives }) => {
   };
 
   return (
-    <div className="grid grid-cols-5 gap-3 justify-around my-3">
+    <div className="grid w-full max-w-lg grid-cols-5 gap-3 justify-around justify-items-center my-3 rounded-md border border-[#896339] p-1">
       {passives.map((skill) => {
         const isActive = checkActive(`${skill.index}`);
         const isDisabled = checkSkill(`${skill.index}`);

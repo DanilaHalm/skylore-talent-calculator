@@ -13,8 +13,8 @@ const ChosedPassives = ({ passives }) => {
   const chosed = passives.filter((skill) => urlSkills.includes(`${skill.index}`));
 
   return (
-    <div className="flex flex-col  w-full max-w-lg">
-      <div className="h-[12vh] bg-cover bg-no-repeat bg-center chosedPassiveBackground flex flex-row justify-around items-center">
+    <div className="flex flex-col border-x-2 border-[#896339] w-full max-w-lg">
+      <div className="h-[12vh]  bg-cover bg-no-repeat bg-center chosedPassiveBackground flex flex-row justify-around items-center">
         {chosed.map((passive) => {
           const iconName = passive.name.replaceAll(" ", "");
 
@@ -30,10 +30,12 @@ const ChosedPassives = ({ passives }) => {
       {isDescActive && (
         <div className="flex flex-col bg-no-repeat bg-center bg-cover chosedPassiveBg text-[10px]/[10px] p-1">
           {chosed.map((passive) => {
-            return <div key={passive.name + passive.desc}>
-              <p className="font-bold">{passive.ru.name}</p>
-              <p>{passive.ru.description}</p>
-            </div>;
+            return (
+              <div key={passive.name + passive.desc}>
+                <p className="font-bold">{passive.ru.name}</p>
+                <p>{passive.ru.description}</p>
+              </div>
+            );
           })}
         </div>
       )}

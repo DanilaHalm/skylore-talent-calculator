@@ -57,8 +57,7 @@ const AllSkills = ({ skills, ultimates }) => {
   };
 
   return (
-    <div className="flex flex-col my-2 border rounded-md border-[
-#896339]">
+    <div className="flex w-full max-w-lg  flex-col my-2 border rounded-md border-[#896339] p-1">
       <div className="grid grid-cols-2 justify-items-center gap-4 justify-around mb-2">
         {ultimates.map((skill) => {
           const isDisabled = checkSkill(`${skill.index}`, true);
@@ -83,7 +82,7 @@ const AllSkills = ({ skills, ultimates }) => {
         })}
       </div>
 
-      <div className="grid grid-cols-4 gap-4 justify-around">
+      <div className="grid grid-cols-4 gap-4 justify-around justify-items-center">
         {skills.map((skill) => {
           const isDisabled = checkSkill(`${skill.index}`, false);
           const isActive = checkActive(`${skill.index}`);

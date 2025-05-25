@@ -19,8 +19,8 @@ const ChosedSkills = ({ skills }) => {
         const iconName = skill.name.replaceAll(" ", "");
         console.log(skill.shards);
         return (
-          <div className="flex items-center flex-col w-screen" key={skill.name + "add"}>
-            <div className="w-full max-w-lg flex flex-row h-[16vh] bg-orange-200">
+          <div className="flex  items-center flex-col w-screen" key={skill.name + "add"}>
+            <div className="w-full rounded-md border-[#896339] border-x-2 max-w-lg flex flex-row h-[16vh]">
               <div className="w-1/2 flex flex-col p-1 chosedSkillBg bg-no-repeat bg-center bg-cover">
                 <div className="flex flex-row">
                   <div
@@ -29,8 +29,8 @@ const ChosedSkills = ({ skills }) => {
                   ></div>
                   <SkillShards skillIndex={skill.index} />
                 </div>
-                <div className="flex flex-col overflow-y-scroll">
-                  <h2 className="font-bold">{skill.ru.name}</h2>
+                <div className="flex flex-col">
+                  <h2 className="font-bold pl-1">{skill.ru.name}</h2>
                 </div>
               </div>
               <ChosedShardsDesc shards={skill.shards} skillIndex={skill.index} />
