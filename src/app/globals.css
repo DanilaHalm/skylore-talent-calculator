@@ -17,6 +17,10 @@ input[type="radio"] {
   width: 15px;
 }
 
+.chosedPassiveBg {
+  background-image: url("../../public/chosedPassiveBg.jpg");
+}
+
 .chosedSkillDescBg {
   background-image: url("../../public/chosedSkillDescBg.jpg");
 }
