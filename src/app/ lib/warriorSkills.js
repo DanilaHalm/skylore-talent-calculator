@@ -212,8 +212,8 @@ const warriorPassives = [
   },
 ];
 
-warriorUltimates.map((ult) => (ult.shards = warriorShards[ult.index]));
+warriorUltimates.map((ult) => (ult.shards = warriorShards.ru[ult.index]));
 
-warriorSkills.map((skill) => (skill.shards = warriorShards[skill.index]));
+warriorSkills.map((skill) => (skill.shards = warriorShards.ru[skill.index]));
 
 export { warriorUltimates, warriorSkills, warriorPassives };
