@@ -16,7 +16,7 @@ const SkillBar = () => {
   const passives = abilities[charClass].passives;
 
   return (
-    <div className="flex flex-col justify-center content-center items-center bg-red-200">
+    <div className="flex flex-col justify-center content-center items-center">
       <AllSkills skills={skills} ultimates={ultimates} />
       <AllPassives passives={passives}/>
       <ChosedSkills skills={[...skills, ...ultimates]} />
