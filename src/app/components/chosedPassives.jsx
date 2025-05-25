@@ -31,7 +31,7 @@ const ChosedPassives = ({ passives }) => {
         <div className="flex flex-col bg-no-repeat bg-center bg-cover chosedPassiveBg text-[10px]/[10px] p-1">
           {chosed.map((passive) => {
             return <div key={passive.name + passive.desc}>
-              <p>{passive.ru.name}</p>
+              <p className="font-bold">{passive.ru.name}</p>
               <p>{passive.ru.description}</p>
             </div>;
           })}
