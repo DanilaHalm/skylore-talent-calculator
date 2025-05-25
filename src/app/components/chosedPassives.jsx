@@ -14,7 +14,7 @@ const ChosedPassives = ({ passives }) => {
 
   return (
     <div className="flex flex-col  w-full max-w-lg">
-      <div className="h-[12vh] bg-green-500 flex flex-row justify-around items-center">
+      <div className="h-[12vh] bg-cover bg-no-repeat bg-center chosedPassiveBackground flex flex-row justify-around items-center">
         {chosed.map((passive) => {
           const iconName = passive.name.replaceAll(" ", "");
 
