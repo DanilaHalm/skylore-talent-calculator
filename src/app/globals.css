@@ -21,7 +21,9 @@ input[type="radio"] {
   background-image: url("../../public/chosedPassiveTest.jpg");
 }
 
-.chosedSkillDescBg, .chosedPassiveBg {
+.chosedSkillDescBg, 
+.chosedPassiveBg,
+.bgPage {
   background-image: url("../../public/chosedSkillDescBg.jpg");
 }
 
