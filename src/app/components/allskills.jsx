@@ -57,7 +57,8 @@ const AllSkills = ({ skills, ultimates }) => {
   };
 
   return (
-    <div className="flex flex-col my-2">
+    <div className="flex flex-col my-2 border rounded-md border-[
+#896339]">
       <div className="grid grid-cols-2 justify-items-center gap-4 justify-around mb-2">
         {ultimates.map((skill) => {
           const isDisabled = checkSkill(`${skill.index}`, true);
