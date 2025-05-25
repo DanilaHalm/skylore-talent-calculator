@@ -212,8 +212,8 @@ const alchemistPassives = [
   },
 ];
 
-alchemistUltimates.map((ult) => (ult.shards = alchemistShards[ult.index]));
+alchemistUltimates.map((ult) => (ult.shards = alchemistShards.ru[ult.index]));
 
-alchemistSkills.map((skill) => (skill.shards = alchemistShards[skill.index]));
+alchemistSkills.map((skill) => (skill.shards = alchemistShards.ru[skill.index]));
 
 export { alchemistUltimates, alchemistSkills, alchemistPassives };
