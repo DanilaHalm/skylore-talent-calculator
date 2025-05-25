@@ -212,8 +212,8 @@ const magePassives = [
   },
 ];
 
-mageUltimates.map((ult) => (ult.shards = mageShards[ult.index]));
+mageUltimates.map((ult) => (ult.shards = mageShards.ru[ult.index]));
 
-mageSkills.map((skill) => (skill.shards = mageShards[skill.index]));
+mageSkills.map((skill) => (skill.shards = mageShards.ru[skill.index]));
 
 export { mageUltimates, mageSkills, magePassives };
