@@ -9,7 +9,8 @@ const ClassBar = () => {
     { name: "Warrior" },
   ];
   return (
-    <nav className="flex justify-around w-96">
+    <nav className="flex justify-around w-96 border rounded-md border-[
+#896339]">
       {classes.map((class_) => {
         return <ClassLink class_link={class_.name} key={class_.name} />;
       })}
