@@ -28,9 +28,12 @@ const ChosedPassives = ({ passives }) => {
         })}
       </div>
       {isDescActive && (
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-no-repeat bg-center bg-cover chosedPassiveBg text-[10px]/[10px] p-1">
           {chosed.map((passive) => {
-            return <div key={passive.name + passive.desc}>{passive.desc}</div>;
+            return <div key={passive.name + passive.desc}>
+              <p>{passive.ru.name}</p>
+              <p>{passive.ru.description}</p>
+            </div>;
           })}
         </div>
       )}
