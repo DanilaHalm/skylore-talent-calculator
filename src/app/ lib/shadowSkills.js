@@ -176,8 +176,8 @@ const shadowPassives = [
   },
 ];
 
-shadowUltimates.map((ult) => (ult.shards = shadowShards[ult.index]));
+shadowUltimates.map((ult) => (ult.shards = shadowShards.ru[ult.index]));
 
-shadowSkills.map((skill) => (skill.shards = shadowShards[skill.index]));
+shadowSkills.map((skill) => (skill.shards = shadowShards.ru[skill.index]));
 
 export { shadowUltimates, shadowSkills, shadowPassives };
