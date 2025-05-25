@@ -22,7 +22,7 @@ export async function generateStaticParams() {
 
 const ClassPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-20 bgPage">
+    <div className="flex flex-col items-center justify-center pt-20 bgPage bg-no-repeat bg-center bg-cover">
       <ClassBar />
       <Suspense fallback={<SearchBarFallback />}>
         <SkillBar />
