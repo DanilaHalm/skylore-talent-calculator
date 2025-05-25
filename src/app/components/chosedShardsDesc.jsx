@@ -16,12 +16,12 @@ const ChosedShardsDesc = ({ shards, skillIndex }) => {
   ];
 
   return (
-    <div className="h-full text-[10px]/[10px] w-1/2 overflow-y-scroll bg-no-repeat bg-center bg-cover chosedSkillBg p-1">
+    <div className="h-full text-[10px]/[10px]  w-1/2 overflow-y-scroll bg-no-repeat bg-center bg-cover chosedSkillBg p-1">
       {selectedShards.map((shard) => {
         if (!shard) return;
         return (
           <div key={shard.desc}>
-            <h5>{shard.name}</h5>
+            <p className="font-bold">{shard.name}</p>
             <p>{shard.desc}</p>
           </div>
         );
